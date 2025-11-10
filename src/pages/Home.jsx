@@ -291,80 +291,160 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Browse by Technology - PREMIUM 2025 Compact Edition */}
-            <section className="py-20 bg-linear-to-b from-gray-50 to-white">
-                <div className="max-w-7xl mx-auto px-4">
+            {/* Browse by Technology - Enhanced Premium Edition */}
+            <section className="py-24 relative bg-slate-50 overflow-hidden">
+                {/* Animated Background Elements */}
+                <div className="absolute inset-0 overflow-hidden">
+                    <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+                    <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+                </div>
+
+                <div className="max-w-7xl mx-auto px-4 relative z-10">
                     {/* Header */}
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900">
+                    <div className="text-center mb-16">
+                        <div className="inline-block mb-4">
+                            <span className="text-sm font-semibold text-blue-400 uppercase tracking-wider bg-blue-500/10 px-4 py-2 rounded-full border border-blue-500/20">
+                                Technology Portfolio
+                            </span>
+                        </div>
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4">
                             Browse by technology
                         </h2>
                         <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-                            Explore solutions built for the way modern teams work
+                            Explore cutting-edge solutions built for the way modern teams work
                         </p>
                     </div>
 
-                    {/* Compact Cards Grid */}
-                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mx-auto">
+                    {/* Premium Cards Grid */}
+                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
                         {[
-                            { label: "Networking", img: networking },
-                            { label: "Security", img: security2 },
-                            { label: "Observability", img: observation },
-                            { label: "Collaboration", img: collaboration },
-                            { label: "Computing", img: computing },
-                            { label: "AI", img: AGI },
+                            {
+                                label: "Networking",
+                                icon: Network,
+                                gradient: "from-blue-500 via-cyan-500 to-blue-600",
+                                bgPattern: "radial-gradient(circle at 30% 50%, rgba(59, 130, 246, 0.3) 0%, transparent 50%)",
+                                iconColor: "text-blue-300"
+                            },
+                            {
+                                label: "Security",
+                                icon: Shield,
+                                gradient: "from-red-500 via-orange-500 to-red-600",
+                                bgPattern: "radial-gradient(circle at 70% 30%, rgba(239, 68, 68, 0.3) 0%, transparent 50%)",
+                                iconColor: "text-red-300"
+                            },
+                            {
+                                label: "Observability",
+                                icon: LayoutDashboard,
+                                gradient: "from-purple-500 via-pink-500 to-purple-600",
+                                bgPattern: "radial-gradient(circle at 50% 70%, rgba(168, 85, 247, 0.3) 0%, transparent 50%)",
+                                iconColor: "text-purple-300"
+                            },
+                            {
+                                label: "Collaboration",
+                                icon: Users,
+                                gradient: "from-green-500 via-emerald-500 to-green-600",
+                                bgPattern: "radial-gradient(circle at 40% 40%, rgba(34, 197, 94, 0.3) 0%, transparent 50%)",
+                                iconColor: "text-green-300"
+                            },
+                            {
+                                label: "Computing",
+                                icon: Cpu,
+                                gradient: "from-indigo-500 via-blue-500 to-indigo-600",
+                                bgPattern: "radial-gradient(circle at 60% 60%, rgba(99, 102, 241, 0.3) 0%, transparent 50%)",
+                                iconColor: "text-indigo-300"
+                            },
+                            {
+                                label: "AI",
+                                icon: Cloud,
+                                gradient: "from-violet-500 via-fuchsia-500 to-violet-600",
+                                bgPattern: "radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.3) 0%, transparent 50%)",
+                                iconColor: "text-violet-300"
+                            },
                         ].map((item, idx) => (
                             <a
                                 key={idx}
                                 href="#"
-                                className="group relative flex flex-col items-center justify-center gap-3 p-5 bg-white rounded-2xl border border-gray-200 
-                     hover:border-blue-500 hover:shadow-xl transition-all duration-300 overflow-hidden"
+                                className="group relative flex flex-col items-center justify-center gap-4 p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50 
+                                backdrop-blur-sm hover:bg-slate-800/80 hover:border-slate-600 hover:shadow-2xl transition-all duration-500 overflow-hidden"
                             >
-                                {/* Gradient overlay */}
-                                <div className="absolute inset-0 bg-linear-to-br from-blue-50/70 via-transparent to-purple-50/30 
-                          opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                {/* Animated gradient background */}
+                                <div
+                                    className={`absolute inset-0 bg-linear-to-br ${item.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-500`}
+                                ></div>
 
-                                {/* Image */}
-                                <div className="relative z-10 w-20 h-20 rounded-xl overflow-hidden shadow-lg ring-4 ring-white/70
-                          group-hover:scale-105 group-hover:ring-blue-200 transition-all duration-300">
-                                    <img
-                                        src={item.img}
-                                        alt={item.label}
-                                        className="w-full h-full object-cover"
-                                    />
+                                {/* Pattern overlay */}
+                                <div
+                                    className="absolute inset-0 opacity-30 group-hover:opacity-50 transition-opacity duration-500"
+                                    style={{ backgroundImage: item.bgPattern }}
+                                ></div>
+
+                                {/* Glowing orb effect */}
+                                <div className={`absolute inset-0 bg-linear-to-br ${item.gradient} opacity-0 group-hover:opacity-10 blur-2xl transition-opacity duration-700`}></div>
+
+                                {/* Icon container with generated background */}
+                                <div className="relative z-10 w-24 h-24 rounded-2xl overflow-hidden shadow-xl 
+                                    group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                                    {/* Gradient background */}
+                                    <div className={`absolute inset-0 bg-linear-to-br ${item.gradient} opacity-90`}></div>
+
+                                    {/* Mesh pattern overlay */}
+                                    <div className="absolute inset-0" style={{
+                                        backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 4px), repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 4px)'
+                                    }}></div>
+
+                                    {/* Icon */}
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <item.icon className={`w-12 h-12 ${item.iconColor} drop-shadow-lg group-hover:scale-110 transition-transform duration-500`} />
+                                    </div>
+
+                                    {/* Shine effect */}
+                                    <div className="absolute inset-0 bg-linear-to-tr from-transparent via-white/20 to-transparent 
+                                        translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
                                 </div>
 
                                 {/* Label */}
-                                <span className="relative z-10 text-sm font-semibold text-slate-700 group-hover:text-blue-600 
-                           transition-colors duration-300 whitespace-nowrap">
+                                <span className="relative z-10 text-sm font-bold text-slate-200 group-hover:text-white 
+                                    transition-colors duration-300 whitespace-nowrap tracking-wide">
                                     {item.label}
                                 </span>
 
-                                {/* Tiny bottom glow */}
-                                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-linear-to-r from-blue-500 to-indigo-600 
-                          group-hover:w-12 transition-all duration-400 rounded-full" />
+                                {/* Bottom accent line */}
+                                <div className={`absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r ${item.gradient} 
+                                    transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500`}></div>
+
+                                {/* Corner highlights */}
+                                <div className="absolute top-0 right-0 w-16 h-16 bg-linear-to-br from-white/5 to-transparent 
+                                    opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-bl-full"></div>
+                                <div className="absolute bottom-0 left-0 w-16 h-16 bg-linear-to-tr from-white/5 to-transparent 
+                                    opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-tr-full"></div>
                             </a>
                         ))}
                     </div>
 
-                    {/* CTA */}
-                    <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-12">
+                    {/* Enhanced CTA Section */}
+                    <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mt-16">
                         <Link
                             to="/products"
-                            className="px-8 py-3.5 bg-linear-to-r from-blue-600 to-indigo-600 text-white font-bold rounded-full 
-                   hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center gap-2 text-sm"
+                            className="group px-10 py-4 bg-linear-to-r from-blue-600 via-blue-500 to-indigo-600 text-white font-bold rounded-full 
+                                hover:shadow-2xl hover:shadow-blue-500/50 hover:scale-105 transition-all duration-300 
+                                flex items-center gap-3 text-sm relative overflow-hidden"
                         >
-                            Browse all products
-                            <ChevronRight className="w-4 h-4" />
+                            <span className="relative z-10">Browse all products</span>
+                            <ChevronRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
+
+                            {/* Animated shine effect */}
+                            <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/20 to-transparent 
+                                translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                         </Link>
 
                         <Link
                             to="/services"
-                            className="px-8 py-3.5 text-blue-600 font-bold flex items-center gap-2.5 hover:gap-4 
-                   transition-all duration-300 text-sm"
+                            className="group px-10 py-4 text-slate-600 font-bold flex items-center gap-3 
+                                hover:gap-4 transition-all duration-300 text-sm border border-slate-600 rounded-full
+                                hover:border-blue-400 hover:bg-slate-800/50 backdrop-blur-sm"
                         >
                             Browse all services
-                            <ChevronRight className="w-4 h-4" />
+                            <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </Link>
                     </div>
                 </div>
