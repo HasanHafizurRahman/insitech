@@ -105,7 +105,7 @@ export default function Services() {
             {/* Hero - Identical to Home/Products */}
             <section className="relative bg-slate-900 text-white overflow-hidden">
                 <div className="absolute inset-0 opacity-40">
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-600/40 to-purple-600/20"></div>
+                    <div className="absolute inset-0 bg-linear-to-br from-blue-600/40 to-purple-600/20"></div>
                 </div>
 
                 <div className="relative max-w-7xl mx-auto px-4 py-20 lg:py-28">
@@ -160,7 +160,7 @@ export default function Services() {
             </section>
 
             {/* Featured Services Grid - 100% Home Match */}
-            <section className="py-20 bg-gradient-to-b from-white to-slate-50">
+            <section className="py-20 bg-linear-to-b from-white to-slate-50">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full">
@@ -187,7 +187,7 @@ export default function Services() {
                                             alt={service.title}
                                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                         />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                                        <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent"></div>
 
                                         {/* Floating Icon */}
                                         <div className="absolute top-4 right-4 w-14 h-14 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center shadow-xl">
@@ -222,7 +222,7 @@ export default function Services() {
                                     </div>
 
                                     {/* Bottom Blue Accent */}
-                                    <div className="h-1 bg-gradient-to-r from-blue-600 to-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                                    <div className="h-1 bg-linear-to-r from-blue-600 to-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                                 </Link>
                             );
                         })}
@@ -296,7 +296,7 @@ export default function Services() {
                             <div className="relative bg-white rounded-3xl p-10 border border-slate-200 shadow-xl hover:shadow-2xl transition-shadow">
                                 {pkg.saving && (
                                     <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                                        <span className="px-6 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold rounded-full text-sm shadow-lg">
+                                        <span className="px-6 py-2 bg-linear-to-r from-blue-600 to-blue-700 text-white font-bold rounded-full text-sm shadow-lg">
                                             {pkg.saving}
                                         </span>
                                     </div>
@@ -313,7 +313,7 @@ export default function Services() {
             </section>
 
             {/* Final CTA - Matches Home */}
-            <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+            <section className="py-20 bg-linear-to-r from-blue-600 to-blue-700 text-white">
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     <h2 className="text-3xl lg:text-4xl font-bold mb-6">
                         Start Your Transformation Today
