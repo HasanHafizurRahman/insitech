@@ -321,7 +321,7 @@ export default function Home() {
                      hover:border-blue-500 hover:shadow-xl transition-all duration-300 overflow-hidden"
                             >
                                 {/* Gradient overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/70 via-transparent to-purple-50/30 
+                                <div className="absolute inset-0 bg-linear-to-br from-blue-50/70 via-transparent to-purple-50/30 
                           opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                                 {/* Image */}
@@ -341,7 +341,7 @@ export default function Home() {
                                 </span>
 
                                 {/* Tiny bottom glow */}
-                                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-600 
+                                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-linear-to-r from-blue-500 to-indigo-600 
                           group-hover:w-12 transition-all duration-400 rounded-full" />
                             </a>
                         ))}
@@ -351,7 +351,7 @@ export default function Home() {
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-12">
                         <Link
                             to="/products"
-                            className="px-8 py-3.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold rounded-full 
+                            className="px-8 py-3.5 bg-linear-to-r from-blue-600 to-indigo-600 text-white font-bold rounded-full 
                    hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center gap-2 text-sm"
                         >
                             Browse all products
