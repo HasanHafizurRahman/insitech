@@ -94,7 +94,7 @@ export default function Solutions() {
 
                 <div className="relative max-w-7xl mx-auto px-4 py-20 lg:py-28">
                     <div className="text-center max-w-4xl mx-auto">
-                        <h1 className="text-4xl font-bold mb-6 leading-tight">
+                        <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
                             Security Solutions That Actually Work
                         </h1>
                         <p className="text-xl lg:text-2xl text-slate-200 mb-12 max-w-3xl mx-auto leading-relaxed">
