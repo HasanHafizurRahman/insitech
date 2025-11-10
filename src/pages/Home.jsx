@@ -490,7 +490,7 @@ export default function Home() {
             </section>
 
             {/* Bottom CTA Section - Cisco Style */}
-            <section className="py-20 bg-slate-900 text-white">
+            <section className="py-20  bg-linear-to-r from-blue-600 to-blue-700 text-white">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
                         <div>

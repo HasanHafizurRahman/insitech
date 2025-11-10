@@ -14,7 +14,7 @@ import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900">
+    <div className="flex flex-col bg-slate-50 text-slate-900">
       <Navbar />
       <main className="grow pt-20">
         <Routes>
