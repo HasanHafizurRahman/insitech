@@ -3,24 +3,47 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
-        <footer className="bg-slate-800 text-slate-200">
-            <div className="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div>
-                    <h3 className="text-xl font-bold">Insitech</h3>
-                    <p className="mt-2 text-sm">Cybersecurity services · Static marketing site</p>
+        <footer className="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+            <div className="max-w-7xl mx-auto px-4">
+                <div className="grid md:grid-cols-4 gap-8">
+                    <div>
+                        <div className="font-bold text-xl text-white mb-4">
+                            <span className="text-blue-400">Insi</span>tech
+                        </div>
+                        <p className="text-sm text-gray-400">
+                            Enterprise cybersecurity solutions for the modern digital landscape.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 className="font-semibold text-white mb-3">Solutions</h4>
+                        <ul className="space-y-2 text-sm">
+                            <li><a href="#network" className="hover:text-blue-400">Network Security</a></li>
+                            <li><a href="#cloud" className="hover:text-blue-400">Cloud Security</a></li>
+                            <li><a href="#data" className="hover:text-blue-400">Data Protection</a></li>
+                            <li><a href="#zero" className="hover:text-blue-400">Zero Trust</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 className="font-semibold text-white mb-3">Resources</h4>
+                        <ul className="space-y-2 text-sm">
+                            <li><a href="#docs" className="hover:text-blue-400">Documentation</a></li>
+                            <li><a href="#cases" className="hover:text-blue-400">Case Studies</a></li>
+                            <li><a href="#papers" className="hover:text-blue-400">Whitepapers</a></li>
+                            <li><a href="#blog" className="hover:text-blue-400">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 className="font-semibold text-white mb-3">Company</h4>
+                        <ul className="space-y-2 text-sm">
+                            <li><a href="#about" className="hover:text-blue-400">About Us</a></li>
+                            <li><a href="#careers" className="hover:text-blue-400">Careers</a></li>
+                            <li><a href="#partners" className="hover:text-blue-400">Partners</a></li>
+                            <li><a href="#contact" className="hover:text-blue-400">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <h4 className="font-semibold">Explore</h4>
-                    <ul className="mt-2 space-y-1 text-sm">
-                        <li><Link to="/solutions">Solutions</Link></li>
-                        <li><Link to="/products">Products</Link></li>
-                        <li><Link to="/services">Services</Link></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 className="font-semibold">Contact</h4>
-                    <p className="mt-2 text-sm">hello@insitech.example</p>
-                    <p className="text-sm">© {new Date().getFullYear()} Insitech</p>
+                <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-gray-400 text-center">
+                    © 2025 Insitech. All rights reserved. | Privacy Policy | Terms of Service
                 </div>
             </div>
         </footer>
