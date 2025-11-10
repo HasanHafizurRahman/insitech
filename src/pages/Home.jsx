@@ -285,136 +285,147 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Browse by Technology - Enhanced Design */}
-            <section className="py-20 bg-linear-to-b from-gray-50 to-white">
+            {/* Browse by Technology - PREMIUM 2025 Edition */}
+            <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+                        <h2 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4">
                             Browse by technology
                         </h2>
+                        <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                            Explore solutions built for the way modern teams work
+                        </p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
                         {[
                             {
-                                icon: "networking",
                                 label: "Networking",
-                                svg: <svg viewBox="0 0 64 64" className="w-10 h-10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="2" fill="currentColor" opacity="0.8" />
-                                    <circle cx="52" cy="12" r="4" stroke="currentColor" strokeWidth="2" fill="currentColor" opacity="0.8" />
-                                    <circle cx="32" cy="32" r="4" stroke="currentColor" strokeWidth="2" fill="currentColor" opacity="0.8" />
-                                    <circle cx="12" cy="52" r="4" stroke="currentColor" strokeWidth="2" fill="currentColor" opacity="0.8" />
-                                    <circle cx="52" cy="52" r="4" stroke="currentColor" strokeWidth="2" fill="currentColor" opacity="0.8" />
-                                    <line x1="14" y1="14" x2="30" y2="30" stroke="currentColor" strokeWidth="2" />
-                                    <line x1="34" y1="30" x2="50" y2="14" stroke="currentColor" strokeWidth="2" />
-                                    <line x1="30" y1="34" x2="14" y2="50" stroke="currentColor" strokeWidth="2" />
-                                    <line x1="34" y1="34" x2="50" y2="50" stroke="currentColor" strokeWidth="2" />
-                                </svg>
+                                svg: (
+                                    <svg viewBox="0 0 80 80" className="w-12 h-12" fill="none">
+                                        <circle cx="16" cy="16" r="6" stroke="currentColor" strokeWidth="3" />
+                                        <circle cx="64" cy="16" r="6" stroke="currentColor" strokeWidth="3" />
+                                        <circle cx="40" cy="40" r="8" stroke="currentColor" strokeWidth="3" />
+                                        <circle cx="16" cy="64" r="6" stroke="currentColor" strokeWidth="3" />
+                                        <circle cx="64" cy="64" r="6" stroke="currentColor" strokeWidth="3" />
+                                        <path d="M20 20L36 36M44 36L60 20M36 44L20 60M44 44L60 60" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+                                        <circle cx="40" cy="40" r="3" fill="currentColor" />
+                                    </svg>
+                                ),
                             },
                             {
-                                icon: "security",
                                 label: "Security",
-                                svg: <svg viewBox="0 0 64 64" className="w-10 h-10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M32 8L16 16V28C16 40 22 48 32 56C42 48 48 40 48 28V16L32 8Z" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round" />
-                                    <path d="M32 20C32 20 28 24 28 28C28 32 32 36 32 36C32 36 36 32 36 28C36 24 32 20 32 20Z" fill="currentColor" opacity="0.3" />
-                                    <circle cx="32" cy="28" r="2" fill="currentColor" />
-                                    <path d="M32 30V38" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                                    <path d="M28 36C28 36 30 38 32 38C34 38 36 36 36 36" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                                </svg>
+                                svg: (
+                                    <svg viewBox="0 0 80 80" className="w-12 h-12" fill="none">
+                                        <path d="M40 12L20 22V38C20 54 28 64 40 68C52 64 60 54 60 38V22L40 12Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                        <path d="M40 28V44" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+                                        <circle cx="40" cy="52" r="4" fill="currentColor" />
+                                        <path d="M32 36L40 44L48 36" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+                                ),
                             },
                             {
-                                icon: "observability",
                                 label: "Observability",
-                                svg: <svg viewBox="0 0 64 64" className="w-10 h-10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="32" cy="32" r="12" stroke="currentColor" strokeWidth="2.5" />
-                                    <circle cx="32" cy="32" r="5" fill="currentColor" opacity="0.8" />
-                                    <line x1="32" y1="8" x2="32" y2="16" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                                    <line x1="32" y1="48" x2="32" y2="56" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                                    <line x1="8" y1="32" x2="16" y2="32" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                                    <line x1="48" y1="32" x2="56" y2="32" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                                    <line x1="15" y1="15" x2="21" y2="21" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                                    <line x1="43" y1="43" x2="49" y2="49" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                                    <line x1="49" y1="15" x2="43" y2="21" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                                    <line x1="21" y1="43" x2="15" y2="49" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                                </svg>
+                                svg: (
+                                    <svg viewBox="0 0 80 80" className="w-12 h-12" fill="none">
+                                        <circle cx="40" cy="40" r="20" stroke="currentColor" strokeWidth="3" />
+                                        <circle cx="40" cy="40" r="10" stroke="currentColor" strokeWidth="3" />
+                                        <circle cx="40" cy="40" r="3" fill="currentColor" />
+                                        <g stroke="currentColor" strokeWidth="3" strokeLinecap="round">
+                                            <line x1="40" y1="10" x2="40" y2="20" />
+                                            <line x1="40" y1="60" x2="40" y2="70" />
+                                            <line x1="10" y1="40" x2="20" y2="40" />
+                                            <line x1="60" y1="40" x2="70" y2="40" />
+                                            <line x1="18" y1="18" x2="25" y2="25" />
+                                            <line x1="55" y1="55" x2="62" y2="62" />
+                                            <line x1="62" y1="18" x2="55" y2="25" />
+                                            <line x1="25" y1="55" x2="18" y2="62" />
+                                        </g>
+                                    </svg>
+                                ),
                             },
                             {
-                                icon: "collaboration",
                                 label: "Collaboration",
-                                svg: <svg viewBox="0 0 64 64" className="w-10 h-10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="20" cy="20" r="6" stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.2" />
-                                    <circle cx="44" cy="20" r="6" stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.2" />
-                                    <circle cx="32" cy="42" r="6" stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.2" />
-                                    <path d="M24 24L29 38" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                                    <path d="M40 24L35 38" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                                    <circle cx="20" cy="20" r="2.5" fill="currentColor" />
-                                    <circle cx="44" cy="20" r="2.5" fill="currentColor" />
-                                    <circle cx="32" cy="42" r="2.5" fill="currentColor" />
-                                </svg>
+                                svg: (
+                                    <svg viewBox="0 0 80 80" className="w-12 h-12" fill="none">
+                                        <circle cx="24" cy="22" r="8" stroke="currentColor" strokeWidth="3" />
+                                        <circle cx="56" cy="22" r="8" stroke="currentColor" strokeWidth="3" />
+                                        <circle cx="40" cy="50" r="10" stroke="currentColor" strokeWidth="3" />
+                                        <path d="M30 28L37 42M50 28L43 42" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+                                        <circle cx="24" cy="22" r="3" fill="currentColor" />
+                                        <circle cx="56" cy="22" r="3" fill="currentColor" />
+                                        <circle cx="40" cy="50" r="4" fill="currentColor" />
+                                    </svg>
+                                ),
                             },
                             {
-                                icon: "computing",
                                 label: "Computing",
-                                svg: <svg viewBox="0 0 64 64" className="w-10 h-10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="12" y="16" width="40" height="28" rx="2" stroke="currentColor" strokeWidth="2.5" />
-                                    <rect x="16" y="20" width="32" height="16" fill="currentColor" opacity="0.2" />
-                                    <line x1="20" y1="24" x2="28" y2="24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                                    <line x1="20" y1="28" x2="36" y2="28" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                                    <line x1="20" y1="32" x2="32" y2="32" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                                    <line x1="24" y1="48" x2="40" y2="48" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                                    <line x1="32" y1="44" x2="32" y2="48" stroke="currentColor" strokeWidth="2.5" />
-                                </svg>
+                                svg: (
+                                    <svg viewBox="0 0 80 80" className="w-12 h-12" fill="none">
+                                        <rect x="18" y="20" width="44" height="36" rx="4" stroke="currentColor" strokeWidth="3" />
+                                        <rect x="24" y="26" width="32" height="20" rx="2" fill="currentColor" opacity="0.15" />
+                                        <path d="M30 32H40M30 38H50M30 44H46" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+                                        <path d="M36 56H56M46 60V56" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+                                    </svg>
+                                ),
                             },
                             {
-                                icon: "ai",
                                 label: "AI",
-                                svg: <svg viewBox="0 0 64 64" className="w-10 h-10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M32 12L36 22L46 18L42 28L52 32L42 36L46 46L36 42L32 52L28 42L18 46L22 36L12 32L22 28L18 18L28 22L32 12Z" stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.2" />
-                                    <circle cx="32" cy="32" r="6" stroke="currentColor" strokeWidth="2.5" fill="currentColor" opacity="0.3" />
-                                    <path d="M32 8V16M32 48V56M8 32H16M48 32H56" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                                </svg>
-                            }
+                                svg: (
+                                    <svg viewBox="0 0 80 80" className="w-12 h-12" fill="none">
+                                        <path d="M40 16L46 28L60 24L52 38L64 40L52 42L60 56L46 52L40 64L34 52L20 56L28 42L16 40L28 38L20 24L34 28L40 16Z" stroke="currentColor" strokeWidth="3" fill="currentColor" opacity="0.15" />
+                                        <circle cx="40" cy="40" r="12" stroke="currentColor" strokeWidth="3" />
+                                        <circle cx="40" cy="40" r="5" fill="currentColor" />
+                                        <g stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                                            <line x1="40" y1="8" x2="40" y2="20" />
+                                            <line x1="40" y1="60" x2="40" y2="72" />
+                                            <line x1="8" y1="40" x2="20" y2="40" />
+                                            <line x1="60" y1="40" x2="72" y2="40" />
+                                        </g>
+                                    </svg>
+                                ),
+                            },
                         ].map((item, idx) => (
                             <a
                                 key={idx}
                                 href="#"
-                                className="group relative flex flex-col items-center justify-center gap-4 p-8 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 hover:shadow-2xl transition-all duration-300 overflow-hidden"
+                                className="group relative flex flex-col items-center justify-center gap-5 p-10 bg-white rounded-3xl border-2 border-gray-200 hover:border-blue-500 hover:shadow-2xl transition-all duration-500 overflow-hidden"
                             >
-                                {/* Subtle gradient background on hover */}
-                                <div className="absolute inset-0 bg-linear-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                {/* Gradient overlay */}
+                                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-transparent to-purple-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-                                {/* Icon container with background circle */}
-                                <div className="relative z-10 w-20 h-20 rounded-full bg-blue-50 flex items-center justify-center group-hover:bg-blue-100 transition-all duration-300 group-hover:scale-110">
-                                    <div className="text-blue-600 group-hover:text-blue-700 transition-colors">
-                                        {item.svg}
-                                    </div>
+                                {/* Icon backdrop */}
+                                <div className="relative z-10 w-28 h-28 rounded-full bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center group-hover:scale-110 group-hover:from-blue-100 group-hover:to-indigo-200 transition-all duration-500 shadow-lg">
+                                    <div className="text-blue-600 group-hover:text-blue-700">{item.svg}</div>
                                 </div>
 
                                 {/* Label */}
-                                <span className="relative z-10 text-lg font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">
+                                <span className="relative z-10 text-xl font-bold text-slate-800 group-hover:text-blue-600 transition-colors duration-300">
                                     {item.label}
                                 </span>
 
-                                {/* Hover indicator */}
-                                <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                                {/* Bottom bar */}
+                                <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-500 to-indigo-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-full" />
                             </a>
                         ))}
                     </div>
 
-                    {/* CTA Buttons */}
-                    <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    {/* CTA */}
+                    <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
                         <Link
                             to="/products"
-                            className="px-8 py-4 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 hover:shadow-lg transition-all duration-300 hover:scale-105"
+                            className="px-10 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold rounded-full hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center gap-2"
                         >
                             Browse all products
+                            <ChevronRight className="w-5 h-5" />
                         </Link>
 
                         <Link
                             to="/services"
-                            className="group px-8 py-4 text-blue-600 font-semibold inline-flex items-center gap-2 hover:gap-4 transition-all duration-300"
+                            className="px-10 py-4 text-blue-600 font-bold flex items-center gap-3 hover:gap-5 transition-all duration-300"
                         >
                             Browse all services
-                            <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                            <ChevronRight className="w-5 h-5" />
                         </Link>
                     </div>
                 </div>
