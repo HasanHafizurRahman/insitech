@@ -5,12 +5,6 @@ import server from '../assets/server.jpg';
 import security from '../assets/security.jpg';
 import NVIDIA from '../assets/NVIDIA.jpg';
 import AiSecurity from '../assets/ai-security.jpg';
-import security2 from '../assets/security-2.jpg';
-import observation from '../assets/observation.jpg';
-import collaboration from '../assets/collaboration.jpg';
-import networking from '../assets/networking.jpg';
-import computing from '../assets/computing.jpg';
-import AGI from '../assets/agi.jpg';
 import Ai from '../assets/ai.jpg';
 import { Link } from "react-router-dom";
 
@@ -303,7 +297,7 @@ export default function Home() {
                     {/* Header */}
                     <div className="text-center mb-16">
                         <div className="inline-block mb-4">
-                            <span className="text-sm font-semibold text-blue-400 uppercase tracking-wider bg-blue-500/10 px-4 py-2 rounded-full border border-blue-500/20">
+                            <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full">
                                 Technology Portfolio
                             </span>
                         </div>
