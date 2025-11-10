@@ -1,8 +1,11 @@
-import { Shield, Cloud, Network, Users, Award, ChevronRight, Download, BookOpen, Video, Lightbulb, LayoutDashboard } from "lucide-react";
+import { Shield, Cloud, Network, Users, Award, ChevronRight, Download, BookOpen, Video, Lightbulb, LayoutDashboard, Cpu, Server, Computer } from "lucide-react";
 import banner from '../assets/banner.jpg'
 import dashboard from '../assets/dashboard.jpg';
 import server from '../assets/server.jpg';
 import security from '../assets/security.jpg';
+import NVIDIA from '../assets/NVIDIA.jpg';
+import AiSecurity from '../assets/ai-security.jpg';
+import Ai from '../assets/ai.jpg';
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -64,7 +67,7 @@ export default function Home() {
                 </div>
             </section>
 
-           {/* Critical Infrastructure Section - Enhanced with Images */}
+            {/* Critical Infrastructure Section - Enhanced with Images */}
             <section className="py-20 bg-linear-to-b from-white to-slate-50">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
@@ -84,7 +87,7 @@ export default function Home() {
                     <div className="grid md:grid-cols-3 gap-8">
                         {[
                             {
-                                image: dashboard, 
+                                image: dashboard,
                                 title: "Unified Nexus Dashboard",
                                 desc: "Simplify your data center network with Insitech Nexus Dashboard. One centralized policy across hardware, software, and cloud.",
                                 cta: "Explore Nexus Dashboard",
@@ -92,7 +95,7 @@ export default function Home() {
                                 gradient: "from-blue-500 to-cyan-500"
                             },
                             {
-                                image: server, 
+                                image: server,
                                 title: "Insitech Unified Edge",
                                 desc: "Not a server. A full-stack compute platform with AI-ready architecture. Deploy, manage, and scale apps.",
                                 cta: "Explore Unified Edge",
@@ -100,7 +103,7 @@ export default function Home() {
                                 gradient: "from-purple-500 to-pink-500"
                             },
                             {
-                                image: security, 
+                                image: security,
                                 title: "Spark Enterprise Security",
                                 desc: "Enterprise Security is now an AI-powered SecOps platform with SIEM, SOAR, XDR, threat intelligence, and more.",
                                 cta: "Explore Spark Enterprise Security",
@@ -112,18 +115,18 @@ export default function Home() {
                                 {/* Image Container with Overlay */}
                                 <div className="relative h-72 overflow-hidden">
                                     {/* Actual Image */}
-                                    <img 
-                                        src={item.image} 
+                                    <img
+                                        src={item.image}
                                         alt={item.title}
                                         className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                                     />
-                                    
+
                                     {/* Gradient Overlay */}
                                     <div className={`absolute inset-0 bg-linear-to-br ${item.gradient} opacity-20 group-hover:opacity-30 transition-opacity duration-500`}></div>
-                                    
+
                                     {/* Bottom Fade */}
                                     <div className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-t from-black/60 to-transparent"></div>
-                                    
+
                                     {/* Floating Icon Indicator */}
                                     <div className="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                                         {idx === 0 && <LayoutDashboard className="w-6 h-6 text-gray-600" />}
@@ -140,12 +143,12 @@ export default function Home() {
                                     <p className="text-slate-600 text-base mb-6 leading-relaxed">
                                         {item.desc}
                                     </p>
-                                    
+
                                     {/* Primary CTA */}
-                                    <button className="w-full px-6 py-3.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 mb-4 shadow-md hover:shadow-xl transform hover:-translate-y-0.5">
+                                    <button className="w-full px-6 py-3.5 bg-linear-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 mb-4 shadow-md hover:shadow-xl transform hover:-translate-y-0.5">
                                         {item.cta}
                                     </button>
-                                    
+
                                     {/* Secondary Link */}
                                     <a href="#" className="text-blue-600 text-sm font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all group/link">
                                         {item.link}
@@ -154,13 +157,13 @@ export default function Home() {
                                 </div>
 
                                 {/* Bottom Accent Line */}
-                                <div className={`h-1 bg-gradient-to-r ${item.gradient} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500`}></div>
+                                <div className={`h-1 bg-linear-to-r ${item.gradient} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500`}></div>
                             </div>
                         ))}
                     </div>
 
                     {/* Additional Info Banner */}
-                    <div className="mt-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 text-white text-center">
+                    <div className="mt-16 bg-linear-to-r from-blue-600 to-blue-700 rounded-2xl p-8 text-white text-center">
                         <p className="text-lg font-semibold mb-2">Need help choosing the right solution?</p>
                         <p className="text-blue-100 mb-4">Our experts are ready to guide you through your digital transformation journey</p>
                         <button className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-full hover:bg-slate-100 transition-colors shadow-lg">
@@ -170,111 +173,120 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Driving Innovation Section - Cisco Style */}
+            {/* Driving Innovation Section - Enhanced with Images */}
             <section className="py-20 bg-slate-50">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="mb-12">
-                        <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
+                    <div className="text-center mb-16">
+                        <div className="inline-block mb-4">
+                            <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full">
+                                AI Innovation
+                            </span>
+                        </div>
+                        <h2 className="text-3xl lg:text-5xl font-bold text-slate-900 mb-4">
                             Driving AI innovation
                         </h2>
-                        <p className="text-lg text-slate-600 max-w-3xl">
+                        <p className="text-lg text-slate-600 max-w-2xl mx-auto">
                             Insitech is combining the power of the network with security, observability, and collaboration to lead you into the new AI era.
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {[
                             {
-                                image: "panel",
+                                image: Ai,
                                 title: "Announcing Insitech AI",
                                 subtitle: "Introducing Insitech AI Agents",
                                 desc: "Watch how AI Agents' generative capabilities, including agent, insights, and team collaboration features, impact-related outcomes.",
-                                links: ["Watch AI Agents demo", "Learn about our agents AI approach"]
+                                links: ["Watch AI Agents demo", "Learn about our agents AI approach"],
+                                gradient: "from-blue-500 to-cyan-500"
                             },
                             {
-                                image: "defense",
+                                image: AiSecurity,
                                 title: "Insitech AI Defense: Securing the future of AI",
                                 desc: "Secure your organization's AI applications and usage with the network to identify, classify, detect, quarantine, and block malicious activity and AI attacks.",
-                                links: ["Learn about AI Defense", "Request a demo"]
+                                links: ["Learn about AI Defense", "Request a demo"],
+                                gradient: "from-purple-500 to-pink-500"
                             },
                             {
-                                image: "factory",
+                                image: NVIDIA,
                                 title: "Insitech Secure AI Factory by NVIDIA",
                                 desc: "From AI POCs for inferencing and training to fully managed 'Hyperscale AI space', watch how Insitech and NVIDIA are accelerating enterprise AI with security.",
-                                links: ["Explore Secure AI Factory", "Learn about our AI infrastructure"]
+                                links: ["Explore Secure AI Factory", "Learn about our AI infrastructure"],
+                                gradient: "from-red-500 to-orange-500"
                             },
                             {
-                                image: "datacenter",
+                                image: "https://blogs.microsoft.com/wp-content/uploads/2025/09/OMB-Image-1-Datacenter.jpg",
                                 title: "Mass-scale AI infrastructure",
                                 desc: "Unlock scalable, high-performance AI with our portfolio of advanced AI network, compute, and storage solutions.",
-                                links: ["Explore enhanced AI portfolio", "Learn about Insitech Silicon One Advantage"]
+                                links: ["Explore enhanced AI portfolio", "Learn about Insitech Silicon One Advantage"],
+                                gradient: "from-green-500 to-teal-500"
                             }
                         ].map((item, idx) => (
-                            <div key={idx} className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                                {/* Image placeholder */}
-                                <div className="relative h-48 bg-linear-to-br from-slate-800 to-slate-900 flex items-center justify-center">
-                                    {idx === 0 && (
-                                        <Users className="w-16 h-16 text-blue-400" />
-                                    )}
-                                    {idx === 1 && (
-                                        <div className="relative">
-                                            <div className="w-24 h-24 border-4 border-red-500 rounded-full animate-pulse"></div>
-                                            <Shield className="absolute inset-0 m-auto w-12 h-12 text-red-400" />
-                                        </div>
-                                    )}
-                                    {idx === 2 && (
-                                        <div className="flex items-center gap-4">
-                                            <div className="text-white font-bold text-2xl">INSITECH</div>
-                                            <div className="text-2xl text-white">×</div>
-                                            <div className="text-white font-bold text-xl">Partner</div>
-                                        </div>
-                                    )}
-                                    {idx === 3 && (
-                                        <div className="relative w-full h-full flex items-center justify-center">
-                                            <div className="grid grid-cols-3 gap-2 p-6">
-                                                {[...Array(9)].map((_, i) => (
-                                                    <div key={i} className="w-12 h-16 bg-slate-600 rounded"></div>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    )}
+                            <div key={idx} className="group bg-white rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 border border-slate-200 hover:border-blue-300">
+                                {/* Image Container with Overlay */}
+                                <div className="relative h-48 overflow-hidden">
+                                    {/* Actual Image */}
+                                    <img
+                                        src={item.image}
+                                        alt={item.title}
+                                        className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                                    />
+
+                                    {/* Gradient Overlay */}
+                                    <div className={`absolute inset-0 bg-linear-to-br ${item.gradient} opacity-20 group-hover:opacity-30 transition-opacity duration-500`}></div>
+
+                                    {/* Bottom Fade */}
+                                    <div className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-t from-black/60 to-transparent"></div>
+
+                                    {/* Floating Icon Indicator */}
+                                    <div className="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                        {idx === 0 && <Computer className="w-6 h-6 text-blue-600" />}
+                                        {idx === 1 && <Shield className="w-6 h-6 text-purple-600" />}
+                                        {idx === 2 && <Cpu className="w-6 h-6 text-red-600" />}
+                                        {idx === 3 && <Server className="w-6 h-6 text-green-600" />}
+                                    </div>
                                 </div>
 
-                                <div className="p-6">
-                                    <h3 className="font-bold text-slate-900 mb-2">{item.title}</h3>
+                                {/* Content */}
+                                <div className="p-4">
+                                    <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                        {item.title}
+                                    </h3>
                                     {item.subtitle && (
-                                        <p className="text-sm font-semibold text-slate-700 mb-2">{item.subtitle}</p>
+                                        <p className="text-base font-semibold text-slate-700 mb-2">{item.subtitle}</p>
                                     )}
-                                    <p className="text-slate-600 text-sm mb-4 leading-relaxed">{item.desc}</p>
-                                    <div className="space-y-2">
+                                    <p className="text-slate-600 text-base mb-6 leading-relaxed">
+                                        {item.desc}
+                                    </p>
+                                    <div className="space-y-3">
                                         {item.links.map((link, i) => (
-                                            <a key={i} href="#" className="text-blue-600 text-sm font-medium flex items-center gap-1 hover:gap-2 transition-all">
+                                            <a key={i} href="#" className="block text-blue-600 text-sm font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all group/link">
                                                 {link}
-                                                <ChevronRight className="w-4 h-4" />
+                                                <ChevronRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
                                             </a>
                                         ))}
                                     </div>
                                 </div>
+
+                                {/* Bottom Accent Line */}
+                                <div className={`h-1 bg-linear-to-r ${item.gradient} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500`}></div>
                             </div>
                         ))}
                     </div>
 
-                    <div className="mt-10 text-center">
-                        <div className="flex flex-wrap justify-center gap-4">
-                            <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors">
-                                Explore more AI news
-                            </button>
-                            <a href="#" className="px-6 py-3 text-blue-600 font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
-                                Why Insitech for the AI era
-                                <ChevronRight className="w-5 h-5" />
-                            </a>
-                        </div>
+                    {/* Additional Info Banner */}
+                    <div className="mt-16 bg-linear-to-r from-blue-600 to-blue-700 rounded-2xl p-8 text-white text-center">
+                        <p className="text-lg font-semibold mb-2">Ready to accelerate your AI journey?</p>
+                        <p className="text-blue-100 mb-4">Discover how Insitech can power your AI innovations</p>
+                        <button className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-full hover:bg-slate-100 transition-colors shadow-lg">
+                            Get Started with AI
+                        </button>
                     </div>
                 </div>
             </section>
 
             {/* Browse by Technology - Enhanced Design */}
-            <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+            <section className="py-20 bg-linear-to-b from-gray-50 to-white">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
