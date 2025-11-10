@@ -16,7 +16,7 @@ export default function App() {
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900">
       <Navbar />
-      <main className="grow">
+      <main className="grow pt-20">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

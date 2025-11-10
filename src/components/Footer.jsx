@@ -6,13 +6,13 @@ export default function Footer() {
         <footer className="bg-linear-to-b from-white to-gray-100 text-gray-700 py-16 relative overflow-hidden">
           
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
                     {/* Brand */}
                     <div>
-                        <div className="font-bold text-2xl text-gray-900 mb-4 flex items-center">
-                            <span className="text-blue-600">Insi</span>tech
-                        </div>
+                        <span className="text-2xl font-bold bg-linear-to-r from-sky-600 to-gray-500 bg-clip-text text-transparent">
+                            Insitech
+                        </span>
 
                         <p className="text-sm text-gray-600 mb-6">
                             Enterprise cybersecurity solutions for the modern digital landscape.
