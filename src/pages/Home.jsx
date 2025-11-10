@@ -174,7 +174,7 @@ export default function Home() {
             </section>
 
             {/* Driving Innovation Section - Enhanced with Images */}
-            <section className="py-20 bg-slate-50">
+            <section className="bg-slate-50">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <div className="inline-block mb-4">
@@ -260,7 +260,7 @@ export default function Home() {
                                     </p>
                                     <div className="space-y-3">
                                         {item.links.map((link, i) => (
-                                            <a key={i} href="#" className="block text-blue-600 text-sm font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all group/link">
+                                            <a key={i} href="#" className="text-blue-600 text-sm font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all group/link">
                                                 {link}
                                                 <ChevronRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
                                             </a>
@@ -380,7 +380,7 @@ export default function Home() {
                                 className="group relative flex flex-col items-center justify-center gap-4 p-8 bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-500 hover:shadow-2xl transition-all duration-300 overflow-hidden"
                             >
                                 {/* Subtle gradient background on hover */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <div className="absolute inset-0 bg-linear-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                                 {/* Icon container with background circle */}
                                 <div className="relative z-10 w-20 h-20 rounded-full bg-blue-50 flex items-center justify-center group-hover:bg-blue-100 transition-all duration-300 group-hover:scale-110">
@@ -421,39 +421,68 @@ export default function Home() {
             </section>
 
             {/* Inside Insitech Section */}
-            <section className="py-20 bg-slate-50">
-                <div className="max-w-7xl mx-auto px-4">
-                    <div className="mb-12">
-                        <h2 className="text-3xl lg:text-4xl font-bold text-slate-900">
+            <section className="py-24 bg-linear-to-b from-slate-50 to-white relative overflow-hidden">
+                <div className="absolute inset-0 opacity-5 bg-[url('/path/to/subtle-pattern.svg')] bg-repeat"></div> {/* Optional subtle background pattern */}
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div className="mb-16 text-center">
+                        <h2 className="text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
                             Inside Insitech
                         </h2>
+                        <p className="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
+                            Discover our latest insights, innovations, and thought leadership in AI, quantum computing, and edge technologies.
+                        </p>
                     </div>
-
-                    <div className="grid md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
                             {
                                 category: "Unified Edge Blog",
                                 title: "AI isn't waiting for the data center",
-                                link: "Read blog"
+                                link: "Read blog",
+                                icon: "BookOpen", // Assuming lucide-react icons are available; replace with actual icon component
+                                description: "Exploring the future of edge AI and its immediate impacts."
                             },
                             {
                                 category: "Blog",
                                 title: "Insitech software that makes distributed quantum safe easy",
-                                link: "Read about our systems-level approach"
+                                link: "Read about our systems-level approach",
+                                icon: "Cpu",
+                                description: "Dive into our comprehensive strategy for quantum-secure systems."
                             },
                             {
                                 category: "Podcast",
                                 title: "Explore Insitech AI POCs: Scalable, secure designs for training, hybrid workloads, and AI deployment",
-                                link: "Learn about Insitech top AI innovations"
+                                link: "Learn about Insitech top AI innovations",
+                                icon: "Mic",
+                                description: "Listen to experts discuss cutting-edge AI proof-of-concepts."
                             }
                         ].map((item, idx) => (
-                            <div key={idx} className="bg-white border-b-4 border-blue-600 p-6 hover:shadow-lg transition-shadow">
-                                <div className="text-sm font-semibold text-slate-700 mb-3">{item.category}</div>
-                                <h3 className="text-lg font-bold text-slate-900 mb-4 leading-tight">{item.title}</h3>
-                                <a href="#" className="text-blue-600 text-sm font-medium inline-flex items-center gap-1 hover:gap-2 transition-all">
-                                    {item.link}
-                                    <ChevronRight className="w-4 h-4" />
-                                </a>
+                            <div
+                                key={idx}
+                                className="bg-white rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 overflow-hidden flex flex-col"
+                            >
+                                <div className="p-6 flex flex-col h-full">
+                                    <div className="flex items-center justify-between mb-4">
+                                        <div className="text-sm font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
+                                            {item.category}
+                                        </div>
+                                        {/* Icon placeholder; use actual icon component */}
+                                        <item.icon className="w-6 h-6 text-blue-600" />
+                                    </div>
+                                    <h3 className="text-xl font-bold text-slate-900 mb-3 leading-tight">
+                                        {item.title}
+                                    </h3>
+                                    <p className="text-sm text-slate-600 mb-6 grow">
+                                        {item.description} {/* Added short description for better engagement */}
+                                    </p>
+                                    <a
+                                        href="#"
+                                        className="text-blue-600 font-medium inline-flex items-center gap-2 hover:gap-3 transition-all group"
+                                    >
+                                        {item.link}
+                                        <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                                    </a>
+                                </div>
+                                <div className="h-1 bg-linear-to-r from-blue-600 to-blue-400"></div> {/* Gradient bottom border */}
                             </div>
                         ))}
                     </div>
