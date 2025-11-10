@@ -5,6 +5,12 @@ import server from '../assets/server.jpg';
 import security from '../assets/security.jpg';
 import NVIDIA from '../assets/NVIDIA.jpg';
 import AiSecurity from '../assets/ai-security.jpg';
+import security2 from '../assets/security-2.jpg';
+import observation from '../assets/observation.jpg';
+import collaboration from '../assets/collaboration.jpg';
+import networking from '../assets/networking.jpg';
+import computing from '../assets/computing.jpg';
+import AGI from '../assets/agi.jpg';
 import Ai from '../assets/ai.jpg';
 import { Link } from "react-router-dom";
 
@@ -285,147 +291,80 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Browse by Technology - PREMIUM 2025 Edition */}
-            <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
+            {/* Browse by Technology - PREMIUM 2025 Compact Edition */}
+            <section className="py-20 bg-linear-to-b from-gray-50 to-white">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4">
+                    {/* Header */}
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900">
                             Browse by technology
                         </h2>
-                        <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                        <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
                             Explore solutions built for the way modern teams work
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+                    {/* Compact Cards Grid */}
+                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mx-auto">
                         {[
-                            {
-                                label: "Networking",
-                                svg: (
-                                    <svg viewBox="0 0 80 80" className="w-12 h-12" fill="none">
-                                        <circle cx="16" cy="16" r="6" stroke="currentColor" strokeWidth="3" />
-                                        <circle cx="64" cy="16" r="6" stroke="currentColor" strokeWidth="3" />
-                                        <circle cx="40" cy="40" r="8" stroke="currentColor" strokeWidth="3" />
-                                        <circle cx="16" cy="64" r="6" stroke="currentColor" strokeWidth="3" />
-                                        <circle cx="64" cy="64" r="6" stroke="currentColor" strokeWidth="3" />
-                                        <path d="M20 20L36 36M44 36L60 20M36 44L20 60M44 44L60 60" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
-                                        <circle cx="40" cy="40" r="3" fill="currentColor" />
-                                    </svg>
-                                ),
-                            },
-                            {
-                                label: "Security",
-                                svg: (
-                                    <svg viewBox="0 0 80 80" className="w-12 h-12" fill="none">
-                                        <path d="M40 12L20 22V38C20 54 28 64 40 68C52 64 60 54 60 38V22L40 12Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path d="M40 28V44" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
-                                        <circle cx="40" cy="52" r="4" fill="currentColor" />
-                                        <path d="M32 36L40 44L48 36" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
-                                ),
-                            },
-                            {
-                                label: "Observability",
-                                svg: (
-                                    <svg viewBox="0 0 80 80" className="w-12 h-12" fill="none">
-                                        <circle cx="40" cy="40" r="20" stroke="currentColor" strokeWidth="3" />
-                                        <circle cx="40" cy="40" r="10" stroke="currentColor" strokeWidth="3" />
-                                        <circle cx="40" cy="40" r="3" fill="currentColor" />
-                                        <g stroke="currentColor" strokeWidth="3" strokeLinecap="round">
-                                            <line x1="40" y1="10" x2="40" y2="20" />
-                                            <line x1="40" y1="60" x2="40" y2="70" />
-                                            <line x1="10" y1="40" x2="20" y2="40" />
-                                            <line x1="60" y1="40" x2="70" y2="40" />
-                                            <line x1="18" y1="18" x2="25" y2="25" />
-                                            <line x1="55" y1="55" x2="62" y2="62" />
-                                            <line x1="62" y1="18" x2="55" y2="25" />
-                                            <line x1="25" y1="55" x2="18" y2="62" />
-                                        </g>
-                                    </svg>
-                                ),
-                            },
-                            {
-                                label: "Collaboration",
-                                svg: (
-                                    <svg viewBox="0 0 80 80" className="w-12 h-12" fill="none">
-                                        <circle cx="24" cy="22" r="8" stroke="currentColor" strokeWidth="3" />
-                                        <circle cx="56" cy="22" r="8" stroke="currentColor" strokeWidth="3" />
-                                        <circle cx="40" cy="50" r="10" stroke="currentColor" strokeWidth="3" />
-                                        <path d="M30 28L37 42M50 28L43 42" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
-                                        <circle cx="24" cy="22" r="3" fill="currentColor" />
-                                        <circle cx="56" cy="22" r="3" fill="currentColor" />
-                                        <circle cx="40" cy="50" r="4" fill="currentColor" />
-                                    </svg>
-                                ),
-                            },
-                            {
-                                label: "Computing",
-                                svg: (
-                                    <svg viewBox="0 0 80 80" className="w-12 h-12" fill="none">
-                                        <rect x="18" y="20" width="44" height="36" rx="4" stroke="currentColor" strokeWidth="3" />
-                                        <rect x="24" y="26" width="32" height="20" rx="2" fill="currentColor" opacity="0.15" />
-                                        <path d="M30 32H40M30 38H50M30 44H46" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                                        <path d="M36 56H56M46 60V56" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
-                                    </svg>
-                                ),
-                            },
-                            {
-                                label: "AI",
-                                svg: (
-                                    <svg viewBox="0 0 80 80" className="w-12 h-12" fill="none">
-                                        <path d="M40 16L46 28L60 24L52 38L64 40L52 42L60 56L46 52L40 64L34 52L20 56L28 42L16 40L28 38L20 24L34 28L40 16Z" stroke="currentColor" strokeWidth="3" fill="currentColor" opacity="0.15" />
-                                        <circle cx="40" cy="40" r="12" stroke="currentColor" strokeWidth="3" />
-                                        <circle cx="40" cy="40" r="5" fill="currentColor" />
-                                        <g stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-                                            <line x1="40" y1="8" x2="40" y2="20" />
-                                            <line x1="40" y1="60" x2="40" y2="72" />
-                                            <line x1="8" y1="40" x2="20" y2="40" />
-                                            <line x1="60" y1="40" x2="72" y2="40" />
-                                        </g>
-                                    </svg>
-                                ),
-                            },
+                            { label: "Networking", img: networking },
+                            { label: "Security", img: security2 },
+                            { label: "Observability", img: observation },
+                            { label: "Collaboration", img: collaboration },
+                            { label: "Computing", img: computing },
+                            { label: "AI", img: AGI },
                         ].map((item, idx) => (
                             <a
                                 key={idx}
                                 href="#"
-                                className="group relative flex flex-col items-center justify-center gap-5 p-10 bg-white rounded-3xl border-2 border-gray-200 hover:border-blue-500 hover:shadow-2xl transition-all duration-500 overflow-hidden"
+                                className="group relative flex flex-col items-center justify-center gap-3 p-5 bg-white rounded-2xl border border-gray-200 
+                     hover:border-blue-500 hover:shadow-xl transition-all duration-300 overflow-hidden"
                             >
                                 {/* Gradient overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-transparent to-purple-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/70 via-transparent to-purple-50/30 
+                          opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                                {/* Icon backdrop */}
-                                <div className="relative z-10 w-28 h-28 rounded-full bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center group-hover:scale-110 group-hover:from-blue-100 group-hover:to-indigo-200 transition-all duration-500 shadow-lg">
-                                    <div className="text-blue-600 group-hover:text-blue-700">{item.svg}</div>
+                                {/* Image */}
+                                <div className="relative z-10 w-20 h-20 rounded-xl overflow-hidden shadow-lg ring-4 ring-white/70
+                          group-hover:scale-105 group-hover:ring-blue-200 transition-all duration-300">
+                                    <img
+                                        src={item.img}
+                                        alt={item.label}
+                                        className="w-full h-full object-cover"
+                                    />
                                 </div>
 
                                 {/* Label */}
-                                <span className="relative z-10 text-xl font-bold text-slate-800 group-hover:text-blue-600 transition-colors duration-300">
+                                <span className="relative z-10 text-sm font-semibold text-slate-700 group-hover:text-blue-600 
+                           transition-colors duration-300 whitespace-nowrap">
                                     {item.label}
                                 </span>
 
-                                {/* Bottom bar */}
-                                <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-500 to-indigo-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-full" />
+                                {/* Tiny bottom glow */}
+                                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-600 
+                          group-hover:w-12 transition-all duration-400 rounded-full" />
                             </a>
                         ))}
                     </div>
 
                     {/* CTA */}
-                    <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-12">
                         <Link
                             to="/products"
-                            className="px-10 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold rounded-full hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center gap-2"
+                            className="px-8 py-3.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold rounded-full 
+                   hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center gap-2 text-sm"
                         >
                             Browse all products
-                            <ChevronRight className="w-5 h-5" />
+                            <ChevronRight className="w-4 h-4" />
                         </Link>
 
                         <Link
                             to="/services"
-                            className="px-10 py-4 text-blue-600 font-bold flex items-center gap-3 hover:gap-5 transition-all duration-300"
+                            className="px-8 py-3.5 text-blue-600 font-bold flex items-center gap-2.5 hover:gap-4 
+                   transition-all duration-300 text-sm"
                         >
                             Browse all services
-                            <ChevronRight className="w-5 h-5" />
+                            <ChevronRight className="w-4 h-4" />
                         </Link>
                     </div>
                 </div>
@@ -433,7 +372,6 @@ export default function Home() {
 
             {/* Inside Insitech Section */}
             <section className="py-24 bg-linear-to-b from-slate-50 to-white relative overflow-hidden">
-                <div className="absolute inset-0 opacity-5 bg-[url('/path/to/subtle-pattern.svg')] bg-repeat"></div> {/* Optional subtle background pattern */}
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="mb-16 text-center">
                         <h2 className="text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
@@ -449,7 +387,7 @@ export default function Home() {
                                 category: "Unified Edge Blog",
                                 title: "AI isn't waiting for the data center",
                                 link: "Read blog",
-                                icon: "BookOpen", // Assuming lucide-react icons are available; replace with actual icon component
+                                icon: "BookOpen",
                                 description: "Exploring the future of edge AI and its immediate impacts."
                             },
                             {
