@@ -1,54 +1,40 @@
 import { Shield, Cloud, Network, Users, Award, ChevronRight, Download, BookOpen, Video, Lightbulb } from "lucide-react";
+import banner from '../assets/banner.jpg'
 
 export default function Home() {
 
     return (
         <div className="bg-white">
-            {/* Hero Section - Enhanced Cisco Style with Image */}
+            {/* Hero Section - Enhanced with Banner Image */}
             <section className="relative bg-linear-to-r from-slate-900 via-blue-900 to-slate-900 text-white overflow-hidden">
+                {/* Background layers */}
                 <div className="absolute inset-0 opacity-30">
-                    <div className="absolute inset-0 bg-linear-to-br from-blue-600/20 to-purple-600/20"></div>
+                    {/* Banner image layer */}
+                    <img
+                        src={banner}
+                        alt="AI at the edge in industrial setting"
+                        className="absolute inset-0 w-full h-full object-cover object-right"
+                    />
+                    {/* Gradient overlay */}
+                    <div className="absolute inset-0 bg-linear-to-br from-blue-600/40 to-purple-600/40 mix-blend-overlay"></div>
                     {/* Simulated network pattern overlay */}
                     <div className="absolute inset-0" style={{
-                        backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(147, 51, 234, 0.1) 0%, transparent 50%)',
+                        backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.2) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(147, 51, 234, 0.2) 0%, transparent 50%)',
                     }}></div>
                 </div>
-                
+
                 <div className="relative max-w-7xl mx-auto px-4 py-16 lg:py-24">
-                    <div className="grid lg:grid-cols-2 gap-12 items-center">
-                        <div className="z-10">
-                            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
-                                Cybersecurity's new frontier: the edge
-                            </h1>
-                            <p className="text-lg lg:text-xl text-slate-200 mb-8 leading-relaxed max-w-2xl">
-                                Secure AI at the edge by bringing compute, networking, and security closer to where data is created. Experience seamless, real-time experiences and new value with Insitech.
-                            </p>
-                            <div className="flex flex-wrap gap-4">
-                                <a href="#solutions" className="inline-flex items-center gap-2 px-6 py-3 bg-white text-slate-900 font-semibold rounded-full hover:bg-slate-100 transition-colors shadow-lg">
-                                    See what's possible
-                                </a>
-                            </div>
-                        </div>
-                        
-                        {/* Hero Image Area */}
-                        <div className="relative hidden lg:block">
-                            <div className="relative h-96 bg-linear-to-br from-blue-500/10 to-purple-500/10 rounded-2xl backdrop-blur-sm border border-white/10 flex items-center justify-center overflow-hidden">
-                                {/* Placeholder for tech image */}
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                    <div className="relative w-64 h-64">
-                                        {/* Animated circles representing network */}
-                                        <div className="absolute inset-0 border-4 border-blue-500/30 rounded-full animate-ping"></div>
-                                        <div className="absolute inset-8 border-4 border-purple-500/30 rounded-full animate-pulse"></div>
-                                        <div className="absolute inset-16 border-4 border-cyan-500/30 rounded-full animate-ping" style={{animationDelay: '0.5s'}}></div>
-                                        <div className="absolute inset-0 flex items-center justify-center">
-                                            <Shield className="w-24 h-24 text-blue-400" />
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* Tech pattern overlay */}
-                                <div className="absolute right-0 top-0 w-32 h-32 bg-linear-to-br from-blue-500 to-purple-500 rounded-full blur-3xl opacity-20"></div>
-                                <div className="absolute left-0 bottom-0 w-32 h-32 bg-linear-to-br from-cyan-500 to-blue-500 rounded-full blur-3xl opacity-20"></div>
-                            </div>
+                    <div className="flex flex-col items-center justify-center text-center z-10">
+                        <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6 max-w-4xl">
+                            Cybersecurity's new frontier: the edge
+                        </h1>
+                        <p className="text-lg lg:text-xl text-slate-200 mb-8 leading-relaxed max-w-2xl">
+                            Secure AI at the edge by bringing compute, networking, and security closer to where data is created. Experience seamless, real-time experiences and new value with Insitech.
+                        </p>
+                        <div className="flex flex-wrap justify-center gap-4">
+                            <a href="#solutions" className="inline-flex items-center gap-2 px-6 py-3 bg-white text-slate-900 font-semibold rounded-full hover:bg-slate-100 transition-colors shadow-lg">
+                                See what's possible
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -132,13 +118,13 @@ export default function Home() {
                                         <div className="relative w-full h-full p-8">
                                             <div className="space-y-2">
                                                 {[...Array(6)].map((_, i) => (
-                                                    <div key={i} className={`h-6 rounded ${i % 3 === 0 ? 'bg-red-500/40' : i % 3 === 1 ? 'bg-yellow-500/40' : 'bg-green-500/40'}`} style={{width: `${60 + Math.random() * 40}%`}}></div>
+                                                    <div key={i} className={`h-6 rounded ${i % 3 === 0 ? 'bg-red-500/40' : i % 3 === 1 ? 'bg-yellow-500/40' : 'bg-green-500/40'}`} style={{ width: `${60 + Math.random() * 40}%` }}></div>
                                                 ))}
                                             </div>
                                         </div>
                                     )}
                                 </div>
-                                
+
                                 <div className="p-6">
                                     <h3 className="text-xl font-bold text-slate-900 mb-3">{item.title}</h3>
                                     <p className="text-slate-600 text-sm mb-4 leading-relaxed">{item.desc}</p>
@@ -225,7 +211,7 @@ export default function Home() {
                                         </div>
                                     )}
                                 </div>
-                                
+
                                 <div className="p-6">
                                     <h3 className="font-bold text-slate-900 mb-2">{item.title}</h3>
                                     {item.subtitle && (
