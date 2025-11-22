@@ -89,7 +89,7 @@ export default function Solutions() {
             {/* Hero - Matches Home/Products/Services */}
             <section className="relative bg-slate-900 text-white overflow-hidden">
                 <div className="absolute inset-0 opacity-40">
-                    <div className="absolute inset-0 bg-linear-to-br from-blue-600/40 to-purple-600/20"></div>
+                    <div className="absolute inset-0 bg-linear-to-br from-teal-600/40 to-purple-600/20"></div>
                 </div>
 
                 <div className="relative max-w-7xl mx-auto px-4 py-20 lg:py-28">
@@ -104,7 +104,7 @@ export default function Solutions() {
                         <div className="flex flex-col sm:flex-row gap-6 justify-center">
                             <Link
                                 to="/contact"
-                                className="px-8 py-4 bg-white text-blue-600 font-bold rounded-full hover:bg-slate-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                                className="px-8 py-4 bg-white text-teal-600 font-bold rounded-full hover:bg-slate-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                             >
                                 Schedule Risk Assessment
                             </Link>
@@ -123,7 +123,7 @@ export default function Solutions() {
             <section className="py-24 bg-linear-to-b from-white to-slate-50">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
-                        <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full">
+                        <span className="text-sm font-semibold text-teal-600 uppercase tracking-wider bg-teal-50 px-4 py-2 rounded-full">
                             Defense-in-Depth Architecture
                         </span>
                         <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mt-4">
@@ -138,7 +138,7 @@ export default function Solutions() {
                                 <Link
                                     key={idx}
                                     to={sol.link}
-                                    className="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-blue-300 hover:shadow-2xl transition-all duration-500"
+                                    className="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-teal-300 hover:shadow-2xl transition-all duration-500"
                                 >
                                     {/* Image */}
                                     <div className="relative h-72 overflow-hidden">
@@ -151,7 +151,7 @@ export default function Solutions() {
 
                                         {/* Floating Icon */}
                                         <div className="absolute top-4 right-4 w-14 h-14 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center shadow-xl">
-                                            <Icon className="w-7 h-7 text-blue-600" />
+                                            <Icon className="w-7 h-7 text-teal-600" />
                                         </div>
 
                                         {/* Title Overlay */}
@@ -175,14 +175,14 @@ export default function Solutions() {
                                             ))}
                                         </div>
 
-                                        <div className="flex items-center gap-2 text-blue-600 font-bold">
+                                        <div className="flex items-center gap-2 text-teal-600 font-bold">
                                             Explore solution
                                             <ChevronRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
                                         </div>
                                     </div>
 
                                     {/* Bottom Accent */}
-                                    <div className="h-1 bg-linear-to-r from-blue-600 to-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                                    <div className="h-1 bg-linear-to-r from-teal-600 to-teal-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                                 </Link>
                             );
                         })}
@@ -208,10 +208,10 @@ export default function Solutions() {
                             return (
                                 <div
                                     key={idx}
-                                    className="group bg-linear-to-b from-slate-50 to-white rounded-3xl p-10 border border-slate-200 hover:border-blue-600 hover:shadow-2xl transition-all duration-500 text-center"
+                                    className="group bg-linear-to-b from-slate-50 to-white rounded-3xl p-10 border border-slate-200 hover:border-teal-600 hover:shadow-2xl transition-all duration-500 text-center"
                                 >
-                                    <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 transition-colors">
-                                        <Icon className="w-10 h-10 text-blue-600 group-hover:text-white transition-colors" />
+                                    <div className="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-teal-600 transition-colors">
+                                        <Icon className="w-10 h-10 text-teal-600 group-hover:text-white transition-colors" />
                                     </div>
                                     <h3 className="text-2xl font-bold text-slate-900 mb-4">{ind.name}</h3>
                                     <p className="text-sm text-slate-600 mb-6 italic">"{ind.challenge}"</p>
@@ -224,18 +224,18 @@ export default function Solutions() {
             </section>
 
             {/* Final CTA - Identical to Home */}
-            <section className="py-24 bg-linear-to-r from-blue-600 to-blue-700 text-white">
+            <section className="py-24 bg-linear-to-r from-teal-600 to-teal-700 text-white">
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     <h2 className="text-4xl lg:text-5xl font-bold mb-8">
                         Ready to Eliminate Risk?
                     </h2>
-                    <p className="text-xl lg:text-2xl text-blue-100 mb-12">
+                    <p className="text-xl lg:text-2xl text-teal-100 mb-12">
                         Get a free security posture assessment — no strings attached.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
                         <Link
                             to="/assessment"
-                            className="px-10 py-5 bg-white text-blue-600 font-bold rounded-full hover:bg-slate-100 transition-all shadow-xl text-lg"
+                            className="px-10 py-5 bg-white text-teal-600 font-bold rounded-full hover:bg-slate-100 transition-all shadow-xl text-lg"
                         >
                             Start Free Assessment
                         </Link>
@@ -246,7 +246,7 @@ export default function Solutions() {
                             Speak to an Expert
                         </Link>
                     </div>
-                    <p className="mt-8 text-blue-200">
+                    <p className="mt-8 text-teal-200">
                         Average time to complete: 12 minutes · 500+ enterprises secured
                     </p>
                 </div>

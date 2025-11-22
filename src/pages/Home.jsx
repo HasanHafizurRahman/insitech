@@ -13,7 +13,7 @@ export default function Home() {
     return (
         <div className="bg-white">
             {/* Hero Section - Enhanced with Banner Image */}
-            <section className="relative bg-linear-to-r from-slate-900 via-blue-900 to-slate-900 text-white overflow-hidden">
+            <section className="relative bg-linear-to-r from-slate-900 via-teal-900 to-slate-900 text-white overflow-hidden">
                 {/* Background layers */}
                 <div className="absolute inset-0 opacity-30">
                     {/* Banner image layer */}
@@ -23,7 +23,7 @@ export default function Home() {
                         className="absolute inset-0 w-full h-full object-cover object-center lg:object-right"
                     />
                     {/* Gradient overlay */}
-                    <div className="absolute inset-0 bg-linear-to-br from-blue-600/40 to-purple-600/40 mix-blend-overlay"></div>
+                    <div className="absolute inset-0 bg-linear-to-br from-teal-600/40 to-purple-600/40 mix-blend-overlay"></div>
                     {/* Simulated network pattern overlay */}
                     <div className="absolute inset-0" style={{
                         backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.2) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(147, 51, 234, 0.2) 0%, transparent 50%)',
@@ -72,7 +72,7 @@ export default function Home() {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <div className="inline-block mb-4">
-                            <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full">
+                            <span className="text-sm font-semibold text-teal-600 uppercase tracking-wider bg-teal-50 px-4 py-2 rounded-full">
                                 Infrastructure Solutions
                             </span>
                         </div>
@@ -92,7 +92,7 @@ export default function Home() {
                                 desc: "Simplify your data center network with Insitech Nexus Dashboard. One centralized policy across hardware, software, and cloud.",
                                 cta: "Explore Nexus Dashboard",
                                 link: "View data sheet",
-                                gradient: "from-blue-500 to-cyan-500"
+                                gradient: "from-teal-500 to-cyan-500"
                             },
                             {
                                 image: server,
@@ -111,7 +111,7 @@ export default function Home() {
                                 gradient: "from-red-500 to-orange-500"
                             }
                         ].map((item, idx) => (
-                            <div key={idx} className="group bg-white rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 border border-slate-200 hover:border-blue-300">
+                            <div key={idx} className="group bg-white rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 border border-slate-200 hover:border-teal-300">
                                 {/* Image Container with Overlay */}
                                 <div className="relative h-72 overflow-hidden">
                                     {/* Actual Image */}
@@ -137,7 +137,7 @@ export default function Home() {
 
                                 {/* Content */}
                                 <div className="p-8">
-                                    <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                    <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-teal-600 transition-colors">
                                         {item.title}
                                     </h3>
                                     <p className="text-slate-600 text-base mb-6 leading-relaxed">
@@ -145,12 +145,12 @@ export default function Home() {
                                     </p>
 
                                     {/* Primary CTA */}
-                                    <button className="w-full px-6 py-3.5 bg-linear-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 mb-4 shadow-md hover:shadow-xl transform hover:-translate-y-0.5">
+                                    <button className="w-full px-6 py-3.5 bg-linear-to-r from-teal-600 to-teal-700 text-white font-semibold rounded-xl hover:from-teal-700 hover:to-teal-800 transition-all duration-300 mb-4 shadow-md hover:shadow-xl transform hover:-translate-y-0.5">
                                         {item.cta}
                                     </button>
 
                                     {/* Secondary Link */}
-                                    <a href="#" className="text-blue-600 text-sm font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all group/link">
+                                    <a href="#" className="text-teal-600 text-sm font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all group/link">
                                         {item.link}
                                         <ChevronRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
                                     </a>
@@ -163,10 +163,10 @@ export default function Home() {
                     </div>
 
                     {/* Additional Info Banner */}
-                    <div className="mt-16 bg-linear-to-r from-blue-600 to-blue-700 rounded-2xl p-8 text-white text-center">
+                    <div className="mt-16 bg-linear-to-r from-teal-600 to-teal-700 rounded-2xl p-8 text-white text-center">
                         <p className="text-lg font-semibold mb-2">Need help choosing the right solution?</p>
-                        <p className="text-blue-100 mb-4">Our experts are ready to guide you through your digital transformation journey</p>
-                        <button className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-full hover:bg-slate-100 transition-colors shadow-lg">
+                        <p className="text-teal-100 mb-4">Our experts are ready to guide you through your digital transformation journey</p>
+                        <button className="px-8 py-3 bg-white text-teal-600 font-semibold rounded-full hover:bg-slate-100 transition-colors shadow-lg">
                             Talk to an Expert
                         </button>
                     </div>
@@ -178,7 +178,7 @@ export default function Home() {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <div className="inline-block mb-4">
-                            <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full">
+                            <span className="text-sm font-semibold text-teal-600 uppercase tracking-wider bg-teal-50 px-4 py-2 rounded-full">
                                 AI Innovation
                             </span>
                         </div>
@@ -198,7 +198,7 @@ export default function Home() {
                                 subtitle: "Introducing Insitech AI Agents",
                                 desc: "Watch how AI Agents' generative capabilities, including agent, insights, and team collaboration features, impact-related outcomes.",
                                 links: ["Watch AI Agents demo", "Learn about our agents AI approach"],
-                                gradient: "from-blue-500 to-cyan-500"
+                                gradient: "from-teal-500 to-cyan-500"
                             },
                             {
                                 image: AiSecurity,
@@ -222,7 +222,7 @@ export default function Home() {
                                 gradient: "from-green-500 to-teal-500"
                             }
                         ].map((item, idx) => (
-                            <div key={idx} className="group bg-white rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 border border-slate-200 hover:border-blue-300">
+                            <div key={idx} className="group bg-white rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 border border-slate-200 hover:border-teal-300">
                                 {/* Image Container with Overlay */}
                                 <div className="relative h-48 overflow-hidden">
                                     {/* Actual Image */}
@@ -240,7 +240,7 @@ export default function Home() {
 
                                     {/* Floating Icon Indicator */}
                                     <div className="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                        {idx === 0 && <Computer className="w-6 h-6 text-blue-600" />}
+                                        {idx === 0 && <Computer className="w-6 h-6 text-teal-600" />}
                                         {idx === 1 && <Shield className="w-6 h-6 text-purple-600" />}
                                         {idx === 2 && <Cpu className="w-6 h-6 text-red-600" />}
                                         {idx === 3 && <Server className="w-6 h-6 text-green-600" />}
@@ -249,7 +249,7 @@ export default function Home() {
 
                                 {/* Content */}
                                 <div className="p-4">
-                                    <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                    <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-teal-600 transition-colors">
                                         {item.title}
                                     </h3>
                                     {item.subtitle && (
@@ -260,7 +260,7 @@ export default function Home() {
                                     </p>
                                     <div className="space-y-3">
                                         {item.links.map((link, i) => (
-                                            <a key={i} href="#" className="text-blue-600 text-sm font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all group/link">
+                                            <a key={i} href="#" className="text-teal-600 text-sm font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all group/link">
                                                 {link}
                                                 <ChevronRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
                                             </a>
@@ -275,10 +275,10 @@ export default function Home() {
                     </div>
 
                     {/* Additional Info Banner */}
-                    <div className="mt-16 bg-linear-to-r from-blue-600 to-blue-700 rounded-2xl p-8 text-white text-center">
+                    <div className="mt-16 bg-linear-to-r from-teal-600 to-teal-700 rounded-2xl p-8 text-white text-center">
                         <p className="text-lg font-semibold mb-2">Ready to accelerate your AI journey?</p>
-                        <p className="text-blue-100 mb-4">Discover how Insitech can power your AI innovations</p>
-                        <button className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-full hover:bg-slate-100 transition-colors shadow-lg">
+                        <p className="text-teal-100 mb-4">Discover how Insitech can power your AI innovations</p>
+                        <button className="px-8 py-3 bg-white text-teal-600 font-semibold rounded-full hover:bg-slate-100 transition-colors shadow-lg">
                             Get Started with AI
                         </button>
                     </div>
@@ -289,7 +289,7 @@ export default function Home() {
             <section className="py-24 relative bg-slate-50 overflow-hidden">
                 {/* Animated Background Elements */}
                 <div className="absolute inset-0 overflow-hidden">
-                    <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+                    <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl animate-pulse"></div>
                     <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
                 </div>
 
@@ -297,7 +297,7 @@ export default function Home() {
                     {/* Header */}
                     <div className="text-center mb-16">
                         <div className="inline-block mb-4">
-                            <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full">
+                            <span className="text-sm font-semibold text-teal-600 uppercase tracking-wider bg-teal-50 px-4 py-2 rounded-full">
                                 Technology Portfolio
                             </span>
                         </div>
@@ -315,9 +315,9 @@ export default function Home() {
                             {
                                 label: "Networking",
                                 icon: Network,
-                                gradient: "from-blue-500 via-cyan-500 to-blue-600",
+                                gradient: "from-teal-500 via-cyan-500 to-teal-600",
                                 bgPattern: "radial-gradient(circle at 30% 50%, rgba(59, 130, 246, 0.3) 0%, transparent 50%)",
-                                iconColor: "text-blue-300"
+                                iconColor: "text-teal-300"
                             },
                             {
                                 label: "Security",
@@ -343,7 +343,7 @@ export default function Home() {
                             {
                                 label: "Computing",
                                 icon: Cpu,
-                                gradient: "from-indigo-500 via-blue-500 to-indigo-600",
+                                gradient: "from-indigo-500 via-teal-500 to-indigo-600",
                                 bgPattern: "radial-gradient(circle at 60% 60%, rgba(99, 102, 241, 0.3) 0%, transparent 50%)",
                                 iconColor: "text-indigo-300"
                             },
@@ -419,8 +419,8 @@ export default function Home() {
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mt-16">
                         <Link
                             to="/products"
-                            className="group px-10 py-4 bg-linear-to-r from-blue-600 via-blue-500 to-indigo-600 text-white font-bold rounded-full 
-                                hover:shadow-2xl hover:shadow-blue-500/50 hover:scale-105 transition-all duration-300 
+                            className="group px-10 py-4 bg-linear-to-r from-teal-600 via-teal-500 to-indigo-600 text-white font-bold rounded-full 
+                                hover:shadow-2xl hover:shadow-teal-500/50 hover:scale-105 transition-all duration-300 
                                 flex items-center gap-3 text-sm relative overflow-hidden"
                         >
                             <span className="relative z-10">Browse all products</span>
@@ -435,7 +435,7 @@ export default function Home() {
                             to="/services"
                             className="group px-10 py-4 text-slate-600 font-bold flex items-center gap-3 
                                 hover:gap-4 transition-all duration-300 text-sm border border-slate-600 rounded-full
-                                hover:border-blue-400 hover:bg-slate-800/50 backdrop-blur-sm"
+                                hover:border-teal-400 hover:bg-slate-800/50 backdrop-blur-sm"
                         >
                             Browse all services
                             <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -485,11 +485,11 @@ export default function Home() {
                             >
                                 <div className="p-6 flex flex-col h-full">
                                     <div className="flex items-center justify-between mb-4">
-                                        <div className="text-sm font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
+                                        <div className="text-sm font-semibold text-teal-600 bg-teal-50 px-3 py-1 rounded-full">
                                             {item.category}
                                         </div>
                                         {/* Icon placeholder; use actual icon component */}
-                                        <item.icon className="w-6 h-6 text-blue-600" />
+                                        <item.icon className="w-6 h-6 text-teal-600" />
                                     </div>
                                     <h3 className="text-xl font-bold text-slate-900 mb-3 leading-tight">
                                         {item.title}
@@ -499,13 +499,13 @@ export default function Home() {
                                     </p>
                                     <a
                                         href="#"
-                                        className="text-blue-600 font-medium inline-flex items-center gap-2 hover:gap-3 transition-all group"
+                                        className="text-teal-600 font-medium inline-flex items-center gap-2 hover:gap-3 transition-all group"
                                     >
                                         {item.link}
                                         <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                                     </a>
                                 </div>
-                                <div className="h-1 bg-linear-to-r from-blue-600 to-blue-400"></div> {/* Gradient bottom border */}
+                                <div className="h-1 bg-linear-to-r from-teal-600 to-teal-400"></div> {/* Gradient bottom border */}
                             </div>
                         ))}
                     </div>
@@ -513,7 +513,7 @@ export default function Home() {
             </section>
 
             {/* Bottom CTA Section - Cisco Style */}
-            <section className="py-20  bg-linear-to-r from-blue-600 to-blue-700 text-white">
+            <section className="py-20  bg-linear-to-r from-teal-600 to-teal-700 text-white">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
                         <div>
@@ -525,7 +525,7 @@ export default function Home() {
                             </p>
                         </div>
                         <div className="flex flex-wrap gap-4">
-                            <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors whitespace-nowrap">
+                            <button className="px-6 py-3 bg-teal-600 text-white font-semibold rounded-full hover:bg-teal-700 transition-colors whitespace-nowrap">
                                 Meet our partners
                             </button>
                             <a href="#" className="px-6 py-3 text-white font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all whitespace-nowrap">

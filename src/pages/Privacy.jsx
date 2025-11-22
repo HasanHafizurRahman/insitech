@@ -5,7 +5,7 @@ export default function Privacy() {
     return (
         <div className="bg-white">
             {/* Hero Section */}
-            <section className="relative bg-linear-to-br from-slate-900 via-blue-900 to-slate-900 text-white py-20">
+            <section className="relative bg-linear-to-br from-slate-900 via-teal-900 to-slate-900 text-white py-20">
                 <div className="absolute inset-0 opacity-20">
                     <div className="absolute inset-0" style={{
                         backgroundImage: 'radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.3) 0%, transparent 50%)',
@@ -65,7 +65,7 @@ export default function Privacy() {
                         ].map((section, idx) => (
                             <div key={idx} className="bg-white p-8 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow">
                                 <div className="flex items-center gap-4 mb-4">
-                                    <section.icon className="w-8 h-8 text-blue-600" />
+                                    <section.icon className="w-8 h-8 text-teal-600" />
                                     <h2 className="text-2xl font-bold text-slate-900">{section.title}</h2>
                                 </div>
                                 <p className="text-slate-600 leading-relaxed">{section.content}</p>
@@ -88,7 +88,7 @@ export default function Privacy() {
                         <p className="text-slate-600 mb-4">
                             You can manage your cookie preferences through your browser settings or our cookie consent tool.
                         </p>
-                        <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors">
+                        <button className="px-6 py-3 bg-teal-600 text-white font-semibold rounded-full hover:bg-teal-700 transition-colors">
                             Manage Cookies
                         </button>
                     </div>
@@ -96,12 +96,12 @@ export default function Privacy() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20 bg-blue-600 text-white">
+            <section className="py-20 bg-teal-600 text-white">
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     <h2 className="text-3xl lg:text-4xl font-bold mb-6">
                         Questions About Privacy?
                     </h2>
-                    <p className="text-xl text-blue-100 mb-8">
+                    <p className="text-xl text-teal-100 mb-8">
                         Our team is here to help with any privacy concerns
                     </p>
                     <a href="/contact" className="px-8 py-3 bg-slate-900 text-white font-semibold rounded-full hover:bg-slate-800 transition-colors inline-flex items-center gap-2">

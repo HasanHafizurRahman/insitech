@@ -57,14 +57,14 @@ export default function Team() {
                         alt="Insitech global team"
                         className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-600/70 via-slate-900/90 to-purple-600/40"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-teal-600/70 via-slate-900/90 to-purple-600/40"></div>
                 </div>
 
                 <div className="relative max-w-7xl mx-auto px-4 py-24 lg:py-32">
                     <div className="text-center max-w-5xl mx-auto">
-                        <div className="inline-flex items-center gap-3 px-6 py-2 bg-blue-600/20 backdrop-blur-sm rounded-full border border-white/20 mb-8">
-                            <Users className="w-5 h-5 text-blue-300" />
-                            <span className="text-blue-300 font-semibold tracking-wider">250+ SECURITY EXPERTS · 18 COUNTRIES</span>
+                        <div className="inline-flex items-center gap-3 px-6 py-2 bg-teal-600/20 backdrop-blur-sm rounded-full border border-white/20 mb-8">
+                            <Users className="w-5 h-5 text-teal-300" />
+                            <span className="text-teal-300 font-semibold tracking-wider">250+ SECURITY EXPERTS · 18 COUNTRIES</span>
                         </div>
                         <h1 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight">
                             Built by the Best Minds in Security
@@ -75,7 +75,7 @@ export default function Team() {
                         <div className="flex flex-col sm:flex-row gap-6 justify-center">
                             <Link
                                 to="/careers"
-                                className="px-8 py-4 bg-white text-blue-600 font-bold rounded-full hover:bg-slate-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                                className="px-8 py-4 bg-white text-teal-600 font-bold rounded-full hover:bg-slate-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                             >
                                 Join Our Mission
                             </Link>
@@ -94,7 +94,7 @@ export default function Team() {
             <section className="py-24 bg-gradient-to-b from-white to-slate-50">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
-                        <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full">
+                        <span className="text-sm font-semibold text-teal-600 uppercase tracking-wider bg-teal-50 px-4 py-2 rounded-full">
                             Executive Leadership
                         </span>
                         <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mt-4">
@@ -106,7 +106,7 @@ export default function Team() {
                         {leadership.map((member, idx) => (
                             <div
                                 key={idx}
-                                className="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-blue-300 hover:shadow-2xl transition-all duration-500"
+                                className="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-teal-300 hover:shadow-2xl transition-all duration-500"
                             >
                                 {/* Photo */}
                                 <div className="relative h-80 overflow-hidden">
@@ -119,13 +119,13 @@ export default function Team() {
 
                                     {/* Floating Icon */}
                                     <div className="absolute top-4 right-4 w-14 h-14 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center shadow-xl">
-                                        <Sparkles className="w-7 h-7 text-blue-600" />
+                                        <Sparkles className="w-7 h-7 text-teal-600" />
                                     </div>
 
                                     {/* Name & Role Overlay */}
                                     <div className="absolute bottom-6 left-6 text-white">
                                         <h3 className="text-2xl font-bold">{member.name}</h3>
-                                        <p className="text-blue-300 font-semibold">{member.role}</p>
+                                        <p className="text-teal-300 font-semibold">{member.role}</p>
                                     </div>
                                 </div>
 
@@ -138,21 +138,21 @@ export default function Team() {
                                     <div className="flex gap-4">
                                         <a
                                             href={member.linkedin}
-                                            className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all"
+                                            className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center hover:bg-teal-600 hover:text-white transition-all"
                                         >
                                             <Linkedin className="w-5 h-5" />
                                         </a>
                                         {member.twitter && (
                                             <a
                                                 href={member.twitter}
-                                                className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all"
+                                                className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center hover:bg-teal-600 hover:text-white transition-all"
                                             >
                                                 <Twitter className="w-5 h-5" />
                                             </a>
                                         )}
                                         <a
                                             href={`mailto:${member.name.toLowerCase().replace(" ", ".")}@insitech.com`}
-                                            className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all"
+                                            className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center hover:bg-teal-600 hover:text-white transition-all"
                                         >
                                             <Mail className="w-5 h-5" />
                                         </a>
@@ -160,7 +160,7 @@ export default function Team() {
                                 </div>
 
                                 {/* Bottom Accent */}
-                                <div className="h-1 bg-gradient-to-r from-blue-600 to-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                                <div className="h-1 bg-gradient-to-r from-teal-600 to-teal-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                             </div>
                         ))}
                     </div>
@@ -192,7 +192,7 @@ export default function Team() {
                                     const Icon = stat.icon;
                                     return (
                                         <div key={i}>
-                                            <div className="text-4xl font-bold text-blue-600 flex items-center gap-3">
+                                            <div className="text-4xl font-bold text-teal-600 flex items-center gap-3">
                                                 <Icon className="w-10 h-10" />
                                                 {stat.value}
                                             </div>
@@ -209,7 +209,7 @@ export default function Team() {
                                 alt="Insitech team collaboration"
                                 className="rounded-3xl shadow-2xl"
                             />
-                            <div className="absolute -bottom-8 -left-8 bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-3xl shadow-2xl">
+                            <div className="absolute -bottom-8 -left-8 bg-gradient-to-r from-teal-600 to-purple-600 text-white p-8 rounded-3xl shadow-2xl">
                                 <div className="text-5xl font-bold">100%</div>
                                 <div className="text-lg opacity-90">Remote-First Culture</div>
                             </div>
@@ -219,18 +219,18 @@ export default function Team() {
             </section>
 
             {/* Final CTA - Matches Home */}
-            <section className="py-24 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+            <section className="py-24 bg-gradient-to-r from-teal-600 to-teal-700 text-white">
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     <h2 className="text-4xl lg:text-5xl font-bold mb-8">
                         Ready to Join the Future of Security?
                     </h2>
-                    <p className="text-xl lg:text-2xl text-blue-100 mb-12">
+                    <p className="text-xl lg:text-2xl text-teal-100 mb-12">
                         We’re hiring world-class talent in AI, security, and engineering
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
                         <Link
                             to="/careers"
-                            className="px-10 py-5 bg-white text-blue-600 font-bold rounded-full hover:bg-slate-100 transition-all shadow-xl text-lg"
+                            className="px-10 py-5 bg-white text-teal-600 font-bold rounded-full hover:bg-slate-100 transition-all shadow-xl text-lg"
                         >
                             Explore Open Roles
                         </Link>
@@ -241,7 +241,7 @@ export default function Team() {
                             Refer a Legend
                         </Link>
                     </div>
-                    <p className="mt-8 text-blue-200">
+                    <p className="mt-8 text-teal-200">
                         Average response time: 24 hours · 2025 "Best Place to Work" finalist
                     </p>
                 </div>

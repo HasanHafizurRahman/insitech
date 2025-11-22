@@ -99,7 +99,7 @@ export default function Products() {
             {/* Hero - Matches Homepage */}
             <section className="relative bg-slate-900 text-white overflow-hidden">
                 <div className="absolute inset-0 opacity-40">
-                    <div className="absolute inset-0 bg-linear-to-br from-blue-600/40 to-purple-600/20"></div>
+                    <div className="absolute inset-0 bg-linear-to-br from-teal-600/40 to-purple-600/20"></div>
                 </div>
 
                 <div className="relative max-w-7xl mx-auto px-4 py-20 lg:py-28">
@@ -141,7 +141,7 @@ export default function Products() {
                                     onClick={() => setSelectedCategory(cat.id)}
                                     className={`flex items-center gap-3 px-6 py-3 rounded-full font-semibold transition-all whitespace-nowrap ${
                                         isActive
-                                            ? "bg-blue-600 text-white shadow-md"
+                                            ? "bg-teal-600 text-white shadow-md"
                                             : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                                     }`}
                                 >
@@ -158,7 +158,7 @@ export default function Products() {
             <section className="py-20 bg-linear-to-b from-white to-slate-50">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
-                        <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full">
+                        <span className="text-sm font-semibold text-teal-600 uppercase tracking-wider bg-teal-50 px-4 py-2 rounded-full">
                             Product Portfolio
                         </span>
                         <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mt-4">
@@ -173,7 +173,7 @@ export default function Products() {
                                 <Link
                                     key={idx}
                                     to={product.link}
-                                    className="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-blue-300 hover:shadow-2xl transition-all duration-500"
+                                    className="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-teal-300 hover:shadow-2xl transition-all duration-500"
                                 >
                                     {/* Image */}
                                     <div className="relative h-72 overflow-hidden">
@@ -186,7 +186,7 @@ export default function Products() {
 
                                         {/* Floating Icon */}
                                         <div className="absolute top-4 right-4 w-14 h-14 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center shadow-xl">
-                                            <Icon className="w-7 h-7 text-blue-600" />
+                                            <Icon className="w-7 h-7 text-teal-600" />
                                         </div>
 
                                         {/* Category Tag */}
@@ -203,21 +203,21 @@ export default function Products() {
                                             <span>{product.deployment}</span>
                                         </div>
 
-                                        <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                        <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-teal-600 transition-colors">
                                             {product.title}
                                         </h3>
                                         <p className="text-slate-600 mb-6 leading-relaxed">
                                             {product.desc}
                                         </p>
 
-                                        <div className="flex items-center gap-2 text-blue-600 font-semibold">
+                                        <div className="flex items-center gap-2 text-teal-600 font-semibold">
                                             <span>Explore product</span>
                                             <ChevronRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
                                         </div>
                                     </div>
 
                                     {/* Bottom Accent */}
-                                    <div className="h-1 bg-linear-to-r from-blue-600 to-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                                    <div className="h-1 bg-linear-to-r from-teal-600 to-teal-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                                 </Link>
                             );
                         })}
@@ -225,7 +225,7 @@ export default function Products() {
 
                     {/* Load More */}
                     <div className="text-center mt-16">
-                        <button className="px-8 py-4 border-2 border-slate-300 text-slate-700 font-semibold rounded-full hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50 transition-all inline-flex items-center gap-3">
+                        <button className="px-8 py-4 border-2 border-slate-300 text-slate-700 font-semibold rounded-full hover:border-teal-600 hover:text-teal-600 hover:bg-teal-50 transition-all inline-flex items-center gap-3">
                             View All Products
                             <ChevronRight className="w-5 h-5" />
                         </button>
@@ -234,18 +234,18 @@ export default function Products() {
             </section>
 
             {/* Final CTA - Matches Homepage */}
-            <section className="py-20 bg-linear-to-r from-blue-600 to-blue-700 text-white">
+            <section className="py-20 bg-linear-to-r from-teal-600 to-teal-700 text-white">
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     <h2 className="text-3xl lg:text-4xl font-bold mb-6">
                         Ready to secure the edge?
                     </h2>
-                    <p className="text-xl text-blue-100 mb-10">
+                    <p className="text-xl text-teal-100 mb-10">
                         Talk to our experts and discover the right solution for your enterprise
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link
                             to="/contact"
-                            className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-full hover:bg-slate-100 transition-colors shadow-lg"
+                            className="px-8 py-4 bg-white text-teal-600 font-semibold rounded-full hover:bg-slate-100 transition-colors shadow-lg"
                         >
                             Contact Sales
                         </Link>

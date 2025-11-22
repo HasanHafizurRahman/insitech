@@ -104,14 +104,14 @@ export default function Resources() {
             {/* Hero - Identical to Home */}
             <section className="relative bg-slate-900 text-white overflow-hidden">
                 <div className="absolute inset-0 opacity-50">
-                    <div className="absolute inset-0 bg-linear-to-br from-blue-600/70 via-slate-900/90 to-purple-600/40"></div>
+                    <div className="absolute inset-0 bg-linear-to-br from-teal-600/70 via-slate-900/90 to-purple-600/40"></div>
                 </div>
 
                 <div className="relative max-w-7xl mx-auto px-4 py-24">
                     <div className="text-center max-w-5xl mx-auto">
                         <div className="flex items-center justify-center gap-3 mb-6">
-                            <Sparkles className="w-8 h-8 text-blue-400" />
-                            <span className="text-blue-300 font-semibold tracking-wider">INSITECH KNOWLEDGE CENTER</span>
+                            <Sparkles className="w-8 h-8 text-teal-400" />
+                            <span className="text-teal-300 font-semibold tracking-wider">INSITECH KNOWLEDGE CENTER</span>
                         </div>
                         <h1 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight">
                             Security Intelligence That Drives Decisions
@@ -136,7 +136,7 @@ export default function Resources() {
                                     onClick={() => setSelectedType(type.id)}
                                     className={`flex items-center gap-3 px-6 py-3 rounded-full font-semibold transition-all whitespace-nowrap ${
                                         isActive
-                                            ? "bg-blue-600 text-white shadow-md"
+                                            ? "bg-teal-600 text-white shadow-md"
                                             : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                                     }`}
                                 >
@@ -153,7 +153,7 @@ export default function Resources() {
             <section className="py-24 bg-linear-to-b from-white to-slate-50">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
-                        <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full">
+                        <span className="text-sm font-semibold text-teal-600 uppercase tracking-wider bg-teal-50 px-4 py-2 rounded-full">
                             Latest & Most Popular
                         </span>
                         <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mt-4">
@@ -166,7 +166,7 @@ export default function Resources() {
                             <Link
                                 key={resource.id}
                                 to={resource.link}
-                                className="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-blue-300 hover:shadow-2xl transition-all duration-500"
+                                className="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-teal-300 hover:shadow-2xl transition-all duration-500"
                             >
                                 {/* Image */}
                                 <div className="relative h-72 overflow-hidden">
@@ -200,14 +200,14 @@ export default function Resources() {
                                     {resource.type === "video" || resource.type === "webinar" ? (
                                         <div className="absolute inset-0 flex items-center justify-center">
                                             <div className="w-20 h-20 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center shadow-2xl">
-                                                <PlayCircle className="w-10 h-10 text-blue-600 ml-1" />
+                                                <PlayCircle className="w-10 h-10 text-teal-600 ml-1" />
                                             </div>
                                         </div>
                                     ) : (
                                         <div className="absolute top-4 right-4 w-14 h-14 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center shadow-xl">
-                                            {resource.type === "whitepaper" && <FileText className="w-7 h-7 text-blue-600" />}
-                                            {resource.type === "case-study" && <FileCheck className="w-7 h-7 text-blue-600" />}
-                                            {resource.type === "datasheet" && <Download className="w-7 h-7 text-blue-600" />}
+                                            {resource.type === "whitepaper" && <FileText className="w-7 h-7 text-teal-600" />}
+                                            {resource.type === "case-study" && <FileCheck className="w-7 h-7 text-teal-600" />}
+                                            {resource.type === "datasheet" && <Download className="w-7 h-7 text-teal-600" />}
                                         </div>
                                     )}
 
@@ -223,31 +223,31 @@ export default function Resources() {
                                         <span>{resource.date}</span>
                                         {resource.readTime && <><span>•</span><span>{resource.readTime}</span></>}
                                         {resource.duration && <><span>•</span><span>{resource.duration}</span></>}
-                                        {resource.downloads && <><span>•</span><span className="text-blue-600 font-medium">{resource.downloads} downloads</span></>}
-                                        {resource.views && <><span>•</span><span className="text-blue-600 font-medium">{resource.views} views</span></>}
+                                        {resource.downloads && <><span>•</span><span className="text-teal-600 font-medium">{resource.downloads} downloads</span></>}
+                                        {resource.views && <><span>•</span><span className="text-teal-600 font-medium">{resource.views} views</span></>}
                                     </div>
 
-                                    <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors line-clamp-2">
+                                    <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-teal-600 transition-colors line-clamp-2">
                                         {resource.title}
                                     </h3>
                                     <p className="text-slate-600 mb-6 leading-relaxed line-clamp-3">
                                         {resource.desc}
                                     </p>
 
-                                    <div className="flex items-center gap-2 text-blue-600 font-bold">
+                                    <div className="flex items-center gap-2 text-teal-600 font-bold">
                                         {resource.type === "video" || resource.type === "webinar" ? "Watch now" : "Download free"}
                                         <ChevronRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
                                     </div>
                                 </div>
 
                                 {/* Bottom Accent */}
-                                <div className="h-1 bg-linear-to-r from-blue-600 to-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                                <div className="h-1 bg-linear-to-r from-teal-600 to-teal-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                             </Link>
                         ))}
                     </div>
 
                     <div className="text-center mt-16">
-                        <button className="px-8 py-4 border-2 border-slate-300 text-slate-700 font-semibold rounded-full hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50 transition-all inline-flex items-center gap-3">
+                        <button className="px-8 py-4 border-2 border-slate-300 text-slate-700 font-semibold rounded-full hover:border-teal-600 hover:text-teal-600 hover:bg-teal-50 transition-all inline-flex items-center gap-3">
                             Load More Resources
                             <ChevronRight className="w-5 h-5" />
                         </button>
@@ -279,15 +279,15 @@ export default function Resources() {
                             <a
                                 key={topic}
                                 href="#"
-                                className="group p-8 bg-slate-50 border-2 border-slate-200 rounded-2xl hover:border-blue-600 hover:shadow-xl transition-all duration-300 text-center"
+                                className="group p-8 bg-slate-50 border-2 border-slate-200 rounded-2xl hover:border-teal-600 hover:shadow-xl transition-all duration-300 text-center"
                             >
-                                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-teal-600 transition-colors">
                                     {topic}
                                 </h3>
                                 <p className="text-sm text-slate-600 mb-4">
                                     12–28 resources · Updated weekly
                                 </p>
-                                <span className="text-blue-600 font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all">
+                                <span className="text-teal-600 font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all">
                                     Explore collection
                                     <ArrowRight className="w-4 h-4" />
                                 </span>
@@ -298,13 +298,13 @@ export default function Resources() {
             </section>
 
             {/* Newsletter CTA - Matches Home */}
-            <section className="py-24 bg-linear-to-r from-blue-600 to-blue-700 text-white">
+            <section className="py-24 bg-linear-to-r from-teal-600 to-teal-700 text-white">
                 <div className="max-w-4xl mx-auto px-4 text-center">
-                    <Mail className="w-16 h-16 mx-auto mb-6 text-blue-200" />
+                    <Mail className="w-16 h-16 mx-auto mb-6 text-teal-200" />
                     <h2 className="text-4xl lg:text-5xl font-bold mb-6">
                         Never Miss a Threat Insight
                     </h2>
-                    <p className="text-xl lg:text-2xl text-blue-100 mb-12">
+                    <p className="text-xl lg:text-2xl text-teal-100 mb-12">
                         Weekly digest: new research, zero-day alerts, and exclusive webinars
                     </p>
                     <div className="max-w-md mx-auto">
@@ -314,11 +314,11 @@ export default function Resources() {
                                 placeholder="name@company.com"
                                 className="flex-1 px-8 py-5 rounded-full text-slate-900 text-lg outline-none"
                             />
-                            <button className="px-10 py-5 bg-white text-blue-600 font-bold rounded-full hover:bg-slate-100 transition-all shadow-xl">
+                            <button className="px-10 py-5 bg-white text-teal-600 font-bold rounded-full hover:bg-slate-100 transition-all shadow-xl">
                                 Subscribe Free
                             </button>
                         </div>
-                        <p className="mt-4 text-blue-200 text-sm">
+                        <p className="mt-4 text-teal-200 text-sm">
                             47,000+ security leaders · Unsubscribe anytime
                         </p>
                     </div>

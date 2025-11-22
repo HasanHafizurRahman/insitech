@@ -105,7 +105,7 @@ export default function Services() {
             {/* Hero - Identical to Home/Products */}
             <section className="relative bg-slate-900 text-white overflow-hidden">
                 <div className="absolute inset-0 opacity-40">
-                    <div className="absolute inset-0 bg-linear-to-br from-blue-600/40 to-purple-600/20"></div>
+                    <div className="absolute inset-0 bg-linear-to-br from-teal-600/40 to-purple-600/20"></div>
                 </div>
 
                 <div className="relative max-w-7xl mx-auto px-4 py-20 lg:py-28">
@@ -146,7 +146,7 @@ export default function Services() {
                                     key={cat.id}
                                     onClick={() => setSelectedCategory(cat.id)}
                                     className={`flex items-center gap-3 px-6 py-3 rounded-full font-semibold transition-all whitespace-nowrap ${isActive
-                                            ? "bg-blue-600 text-white shadow-md"
+                                            ? "bg-teal-600 text-white shadow-md"
                                             : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                                         }`}
                                 >
@@ -163,7 +163,7 @@ export default function Services() {
             <section className="py-20 bg-linear-to-b from-white to-slate-50">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
-                        <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full">
+                        <span className="text-sm font-semibold text-teal-600 uppercase tracking-wider bg-teal-50 px-4 py-2 rounded-full">
                             Service Portfolio
                         </span>
                         <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mt-4">
@@ -178,7 +178,7 @@ export default function Services() {
                                 <Link
                                     key={service.id}
                                     to={service.link}
-                                    className="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-blue-300 hover:shadow-2xl transition-all duration-500"
+                                    className="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-teal-300 hover:shadow-2xl transition-all duration-500"
                                 >
                                     {/* Image */}
                                     <div className="relative h-72 overflow-hidden">
@@ -191,7 +191,7 @@ export default function Services() {
 
                                         {/* Floating Icon */}
                                         <div className="absolute top-4 right-4 w-14 h-14 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center shadow-xl">
-                                            <Icon className="w-7 h-7 text-blue-600" />
+                                            <Icon className="w-7 h-7 text-teal-600" />
                                         </div>
 
                                         {/* Category Tag */}
@@ -208,28 +208,28 @@ export default function Services() {
                                             <span>{service.clients}</span>
                                         </div>
 
-                                        <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                        <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-teal-600 transition-colors">
                                             {service.title}
                                         </h3>
                                         <p className="text-slate-600 mb-6 leading-relaxed">
                                             {service.desc}
                                         </p>
 
-                                        <div className="flex items-center gap-2 text-blue-600 font-semibold">
+                                        <div className="flex items-center gap-2 text-teal-600 font-semibold">
                                             <span>Explore service</span>
                                             <ChevronRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
                                         </div>
                                     </div>
 
                                     {/* Bottom Blue Accent */}
-                                    <div className="h-1 bg-linear-to-r from-blue-600 to-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                                    <div className="h-1 bg-linear-to-r from-teal-600 to-teal-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                                 </Link>
                             );
                         })}
                     </div>
 
                     <div className="text-center mt-16">
-                        <button className="px-8 py-4 border-2 border-slate-300 text-slate-700 font-semibold rounded-full hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50 transition-all inline-flex items-center gap-3">
+                        <button className="px-8 py-4 border-2 border-slate-300 text-slate-700 font-semibold rounded-full hover:border-teal-600 hover:text-teal-600 hover:bg-teal-50 transition-all inline-flex items-center gap-3">
                             View All Services
                             <ChevronRight className="w-5 h-5" />
                         </button>
@@ -257,15 +257,15 @@ export default function Services() {
                             <a
                                 key={industry}
                                 href="#"
-                                className="group p-8 bg-slate-50 border-2 border-slate-200 rounded-2xl hover:border-blue-600 hover:shadow-xl transition-all duration-300"
+                                className="group p-8 bg-slate-50 border-2 border-slate-200 rounded-2xl hover:border-teal-600 hover:shadow-xl transition-all duration-300"
                             >
-                                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-teal-600 transition-colors">
                                     {industry}
                                 </h3>
                                 <p className="text-sm text-slate-600 mb-4">
                                     Compliance-ready solutions (PCI DSS, HIPAA, NIST 800-53, etc.)
                                 </p>
-                                <span className="text-blue-600 font-semibold inline-flex items-center gap-2 group-hover:gap-4 transition-all">
+                                <span className="text-teal-600 font-semibold inline-flex items-center gap-2 group-hover:gap-4 transition-all">
                                     Explore industry services
                                     <ArrowRight className="w-4 h-4" />
                                 </span>
@@ -296,14 +296,14 @@ export default function Services() {
                             <div className="relative bg-white rounded-3xl p-10 border border-slate-200 shadow-xl hover:shadow-2xl transition-shadow">
                                 {pkg.saving && (
                                     <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                                        <span className="px-6 py-2 bg-linear-to-r from-blue-600 to-blue-700 text-white font-bold rounded-full text-sm shadow-lg">
+                                        <span className="px-6 py-2 bg-linear-to-r from-teal-600 to-teal-700 text-white font-bold rounded-full text-sm shadow-lg">
                                             {pkg.saving}
                                         </span>
                                     </div>
                                 )}
                                 <h3 className="text-2xl font-bold text-slate-900 mb-4">{pkg.name}</h3>
-                                <p className="text-4xl font-bold text-blue-600 mb-8">{pkg.price}</p>
-                                <button className="w-full py-4 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-colors">
+                                <p className="text-4xl font-bold text-teal-600 mb-8">{pkg.price}</p>
+                                <button className="w-full py-4 bg-teal-600 text-white font-bold rounded-xl hover:bg-teal-700 transition-colors">
                                     Get Started
                                 </button>
                             </div>
@@ -313,18 +313,18 @@ export default function Services() {
             </section>
 
             {/* Final CTA - Matches Home */}
-            <section className="py-20 bg-linear-to-r from-blue-600 to-blue-700 text-white">
+            <section className="py-20 bg-linear-to-r from-teal-600 to-teal-700 text-white">
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     <h2 className="text-3xl lg:text-4xl font-bold mb-6">
                         Start Your Transformation Today
                     </h2>
-                    <p className="text-xl text-blue-100 mb-10">
+                    <p className="text-xl text-teal-100 mb-10">
                         Free 60-minute consultation with a senior architect
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link
                             to="/contact"
-                            className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-full hover:bg-slate-100 transition-colors shadow-lg"
+                            className="px-8 py-4 bg-white text-teal-600 font-semibold rounded-full hover:bg-slate-100 transition-colors shadow-lg"
                         >
                             Book Consultation
                         </Link>

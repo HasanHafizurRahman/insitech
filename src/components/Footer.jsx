@@ -10,7 +10,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
                     {/* Brand */}
                     <div>
-                        <span className="text-2xl font-bold bg-linear-to-r from-sky-600 to-gray-500 bg-clip-text text-transparent">
+                        <span className="text-2xl font-bold bg-linear-to-r from-teal-600 to-gray-500 bg-clip-text text-transparent">
                             Insitech
                         </span>
 
@@ -19,16 +19,16 @@ export default function Footer() {
                         </p>
 
                         <div className="flex space-x-4">
-                            <a className="text-gray-600 hover:text-blue-600 transition-colors" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                            <a className="text-gray-600 hover:text-teal-600 transition-colors" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                                 <Facebook className="w-5 h-5" />
                             </a>
-                            <a className="text-gray-600 hover:text-blue-600 transition-colors" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                            <a className="text-gray-600 hover:text-teal-600 transition-colors" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                                 <Twitter className="w-5 h-5" />
                             </a>
-                            <a className="text-gray-600 hover:text-blue-600 transition-colors" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                            <a className="text-gray-600 hover:text-teal-600 transition-colors" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                                 <Linkedin className="w-5 h-5" />
                             </a>
-                            <a className="text-gray-600 hover:text-blue-600 transition-colors" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                            <a className="text-gray-600 hover:text-teal-600 transition-colors" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                                 <Instagram className="w-5 h-5" />
                             </a>
                         </div>
@@ -45,7 +45,7 @@ export default function Footer() {
                                 ["Zero Trust", "/zero-trust"],
                             ].map(([label, link]) => (
                                 <li key={link}>
-                                    <Link to={link} className="hover:text-blue-600 transition-colors flex items-center gap-2 group">
+                                    <Link to={link} className="hover:text-teal-600 transition-colors flex items-center gap-2 group">
                                         {label}
                                         <span className="opacity-0 group-hover:opacity-100 transition-opacity">&rarr;</span>
                                     </Link>
@@ -65,7 +65,7 @@ export default function Footer() {
                                 ["Blog", "/blog"],
                             ].map(([label, link]) => (
                                 <li key={link}>
-                                    <Link to={link} className="hover:text-blue-600 transition-colors flex items-center gap-2 group">
+                                    <Link to={link} className="hover:text-teal-600 transition-colors flex items-center gap-2 group">
                                         {label}
                                         <span className="opacity-0 group-hover:opacity-100 transition-opacity">&rarr;</span>
                                     </Link>
@@ -85,7 +85,7 @@ export default function Footer() {
                                 ["Contact", "/contact"],
                             ].map(([label, link]) => (
                                 <li key={link}>
-                                    <Link to={link} className="hover:text-blue-600 transition-colors flex items-center gap-2 group">
+                                    <Link to={link} className="hover:text-teal-600 transition-colors flex items-center gap-2 group">
                                         {label}
                                         <span className="opacity-0 group-hover:opacity-100 transition-opacity">&rarr;</span>
                                     </Link>
@@ -100,9 +100,9 @@ export default function Footer() {
                     <div>© 2025 Insitech. All rights reserved.</div>
 
                     <div className="space-x-4 mt-4 md:mt-0">
-                        <Link to="/privacy" className="hover:text-blue-600 transition-colors">Privacy Policy</Link>
+                        <Link to="/privacy" className="hover:text-teal-600 transition-colors">Privacy Policy</Link>
                         <span>|</span>
-                        <Link to="/terms" className="hover:text-blue-600 transition-colors">Terms of Service</Link>
+                        <Link to="/terms" className="hover:text-teal-600 transition-colors">Terms of Service</Link>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@ export default function Footer() {
             {/* Back to top */}
             <button
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                className="fixed bottom-4 right-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors z-20"
+                className="fixed bottom-4 right-4 bg-teal-600 text-white p-3 rounded-full shadow-lg hover:bg-teal-700 transition-colors z-20"
             >
                 <ChevronUp className="w-5 h-5" />
             </button>

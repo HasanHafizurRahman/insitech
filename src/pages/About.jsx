@@ -22,14 +22,14 @@ export default function About() {
                         alt="Insitech global headquarters and data centers"
                         className="w-full h-full object-cover object-center"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-600/70 via-slate-900/90 to-purple-600/40"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-teal-600/70 via-slate-900/90 to-purple-600/40"></div>
                 </div>
 
                 <div className="relative max-w-7xl mx-auto px-4 py-24 lg:py-32">
                     <div className="text-center max-w-5xl mx-auto">
-                        <div className="inline-flex items-center gap-3 px-6 py-2 bg-blue-600/20 backdrop-blur-sm rounded-full border border-white/20 mb-8">
-                            <Sparkles className="w-5 h-5 text-blue-300" />
-                            <span className="text-blue-300 font-semibold tracking-wider">SINCE 2010 · 500+ ENTERPRISES · 40+ COUNTRIES</span>
+                        <div className="inline-flex items-center gap-3 px-6 py-2 bg-teal-600/20 backdrop-blur-sm rounded-full border border-white/20 mb-8">
+                            <Sparkles className="w-5 h-5 text-teal-300" />
+                            <span className="text-teal-300 font-semibold tracking-wider">SINCE 2010 · 500+ ENTERPRISES · 40+ COUNTRIES</span>
                         </div>
                         <h1 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight">
                             Securing the Future at the Edge
@@ -40,7 +40,7 @@ export default function About() {
                         <div className="flex flex-col sm:flex-row gap-6 justify-center">
                             <Link
                                 to="/contact"
-                                className="px-8 py-4 bg-white text-blue-600 font-bold rounded-full hover:bg-slate-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                                className="px-8 py-4 bg-white text-teal-600 font-bold rounded-full hover:bg-slate-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                             >
                                 Partner with Us
                             </Link>
@@ -60,7 +60,7 @@ export default function About() {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div>
-                            <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full">
+                            <span className="text-sm font-semibold text-teal-600 uppercase tracking-wider bg-teal-50 px-4 py-2 rounded-full">
                                 Our Foundation
                             </span>
                             <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mt-6 mb-8">
@@ -81,7 +81,7 @@ export default function About() {
                                     const Icon = stat.icon;
                                     return (
                                         <div key={i} className="text-center">
-                                            <Icon className="w-10 h-10 text-blue-600 mx-auto mb-3" />
+                                            <Icon className="w-10 h-10 text-teal-600 mx-auto mb-3" />
                                             <div className="text-3xl font-bold text-slate-900">{stat.value}</div>
                                             <div className="text-sm text-slate-600">{stat.label}</div>
                                         </div>
@@ -95,7 +95,7 @@ export default function About() {
                                 alt="Insitech leadership team"
                                 className="rounded-2xl shadow-2xl"
                             />
-                            <div className="absolute -bottom-6 -left-6 bg-blue-600 text-white p-6 rounded-2xl shadow-xl">
+                            <div className="absolute -bottom-6 -left-6 bg-teal-600 text-white p-6 rounded-2xl shadow-xl">
                                 <div className="text-4xl font-bold">15+</div>
                                 <div className="text-sm opacity-90">Years of Innovation</div>
                             </div>
@@ -108,7 +108,7 @@ export default function About() {
             <section className="py-24 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
-                        <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider bg-blue-50 px-4 py-2 rounded-full">
+                        <span className="text-sm font-semibold text-teal-600 uppercase tracking-wider bg-teal-50 px-4 py-2 rounded-full">
                             Our North Star
                         </span>
                         <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mt-4">
@@ -122,7 +122,7 @@ export default function About() {
                                 icon: Rocket,
                                 title: "Mission",
                                 desc: "To make AI at the edge secure, seamless, and accessible — protecting organizations while accelerating innovation.",
-                                gradient: "from-blue-500 to-cyan-500"
+                                gradient: "from-teal-500 to-cyan-500"
                             },
                             {
                                 icon: Globe,
@@ -141,17 +141,17 @@ export default function About() {
                             return (
                                 <div
                                     key={idx}
-                                    className="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-blue-300 hover:shadow-2xl transition-all duration-500"
+                                    className="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-teal-300 hover:shadow-2xl transition-all duration-500"
                                 >
                                     <div className="relative h-48 overflow-hidden">
                                         <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-20 group-hover:opacity-30 transition-opacity`}></div>
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                                         <div className="absolute top-6 left-6 w-16 h-16 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center shadow-xl">
-                                            <Icon className="w-8 h-8 text-blue-600" />
+                                            <Icon className="w-8 h-8 text-teal-600" />
                                         </div>
                                     </div>
                                     <div className="p-8">
-                                        <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors">
+                                        <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-teal-600 transition-colors">
                                             {item.title}
                                         </h3>
                                         <p className="text-slate-600 leading-relaxed">
@@ -192,7 +192,7 @@ export default function About() {
                                     { year: "2025", milestone: "500+ Enterprise Customers" }
                                 ].map((item, i) => (
                                     <div key={i}>
-                                        <div className="text-4xl font-bold text-blue-400">{item.year}</div>
+                                        <div className="text-4xl font-bold text-teal-400">{item.year}</div>
                                         <div className="text-sm mt-2 opacity-90">{item.milestone}</div>
                                     </div>
                                 ))}
@@ -226,18 +226,18 @@ export default function About() {
             </section>
 
             {/* Final CTA - Matches Home */}
-            <section className="py-24 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+            <section className="py-24 bg-gradient-to-r from-teal-600 to-teal-700 text-white">
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     <h2 className="text-4xl lg:text-5xl font-bold mb-8">
                         Ready to Write the Next Chapter Together?
                     </h2>
-                    <p className="text-xl lg:text-2xl text-blue-100 mb-12">
+                    <p className="text-xl lg:text-2xl text-teal-100 mb-12">
                         Partner with the team securing tomorrow’s AI infrastructure
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
                         <Link
                             to="/contact"
-                            className="px-10 py-5 bg-white text-blue-600 font-bold rounded-full hover:bg-slate-100 transition-all shadow-xl text-lg"
+                            className="px-10 py-5 bg-white text-teal-600 font-bold rounded-full hover:bg-slate-100 transition-all shadow-xl text-lg"
                         >
                             Start a Partnership
                         </Link>

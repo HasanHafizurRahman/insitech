@@ -37,7 +37,7 @@ export default function Navbar() {
                     {/* Logo */}
                     <NavLink to="/" className="flex items-center gap-2 group">
                       
-                        <span className="text-2xl font-bold bg-linear-to-r from-sky-600 to-gray-500 bg-clip-text text-transparent">
+                        <span className="text-2xl font-bold bg-linear-to-r from-teal-600 to-gray-500 bg-clip-text text-transparent">
                             Insitech
                         </span>
                         
@@ -51,8 +51,8 @@ export default function Navbar() {
                                 to={l.to}
                                 className={({ isActive }) =>
                                     `px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${isActive
-                                        ? "bg-sky-50 text-sky-700"
-                                        : "text-slate-600 hover:text-sky-600 hover:bg-slate-50"
+                                        ? "bg-teal-50 text-teal-700"
+                                        : "text-slate-600 hover:text-teal-600 hover:bg-slate-50"
                                     }`
                                 }
                             >
@@ -63,10 +63,10 @@ export default function Navbar() {
 
                     {/* CTA Button - Desktop */}
                     <div className="hidden lg:flex items-center gap-4">
-                        <button className="px-4 py-2 text-sm font-medium text-slate-600 hover:text-sky-600 transition-colors">
+                        <button className="px-4 py-2 text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors">
                             Sign In
                         </button>
-                        <button className="px-6 py-2.5 bg-linear-to-r from-sky-600 to-blue-600 text-white text-sm font-medium rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-200">
+                        <button className="px-6 py-2.5 bg-linear-to-r from-teal-600 to-teal-600 text-white text-sm font-medium rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-200">
                             Get Started
                         </button>
                     </div>
@@ -96,7 +96,7 @@ export default function Navbar() {
                                 onClick={() => setOpen(false)}
                                 className={({ isActive }) =>
                                     `px-4 py-3 rounded-lg text-base font-medium transition-all ${isActive
-                                        ? "bg-sky-50 text-sky-700"
+                                        ? "bg-teal-50 text-teal-700"
                                         : "text-slate-600 hover:bg-slate-50"
                                     }`
                                 }
@@ -108,7 +108,7 @@ export default function Navbar() {
                             <button className="px-4 py-3 text-base font-medium text-slate-600 hover:bg-slate-50 rounded-lg transition-colors">
                                 Sign In
                             </button>
-                            <button className="px-4 py-3 bg-linear-to-r from-sky-600 to-blue-600 text-white text-base font-medium rounded-lg hover:shadow-lg transition-all">
+                            <button className="px-4 py-3 bg-linear-to-r from-teal-600 to-teal-600 text-white text-base font-medium rounded-lg hover:shadow-lg transition-all">
                                 Get Started
                             </button>
                         </div>
